@@ -1,20 +1,59 @@
 <html>
-        <head><title>OneRNG - Hardware Random Number Generator</title></head>
+        <head>
+                <title>OneRNG - Hardware Random Number Generator</title>
+                <link rel="stylesheet" href="fonts/RobotoSlab/RobotoSlab.css" type="text/css" />
+                <link rel="stylesheet" href="onerng.css" type="text/css" media="screen, projection" />
+        </head>
         <body>
+        <div id="page">
+        <div id="header">
                 <h1>OneRNG</h1>
                 <h2>Open Hardware Random Number Generator</h2>
+        </div>
+
+        <div id="content">
                 <p>The OneRNG is a project to create a reliable and open hardware random number generator - one that can be verified by the user, one that can be trusted.</p>
                 <hr/>
-                <p>At this early stage, the team is small, the hardware is in very early prototype and the software is basically absent.
-                But we have some good ideas about how to provide a HWRNG that you can verify and trust.</p>
-                <p>Over the next few weeks we'll start describing the project in more detail. There will be an email list/forum for talk, hardware designs and software source.</p>
-                <p>But to keep you going, here's a photo of our most recent prototype :-</p>
-                <img src="moonbase-ccrng-v06.jpg" width="400" alt="A small U S B device about the size of a flash drive, with an R F shield over half of the components. The board states 'copyright Paul Campbell 2014' and has an Open Hardware logo"/>
-                <h3>Team Members</h3>
+                <img src="img/icon_10541/icon_10541.svg"/>
+                <img src="img/icon_10542/icon_10542.svg"/>
+                <img src="img/icon_10543/icon_10543.svg"/>
+                <img src="img/icon_10544/icon_10544.svg"/>
+                <img src="img/icon_10545/icon_10545.svg"/>
+                <img src="img/icon_27626/icon_27626.svg"/>
+                <hr/>
+                <p>At this early stage, the team is small, the hardware is in very early prototype and the software is basic.
+                But we have some good ideas about how to provide a HWRNG that you can verify and trust.
+                Initially, we are concentrating on making a decent entropy source;
+                the actual generation of "random numbers" is deferred to your OS &amp; software.
+                </p>
+                <h3><img src="img/icon_5909/icon_5909.svg" width="24"/>Current State</h3>
+                <p>We have a small number of units that have been assembled and programmed by Paul in his own lab,
+                and these have been sent out to a few testers for comment.
+                <p>The current beta unit is described in detail over at the
+                <a href="http://moonbaseotago.com/onerng/">Moonbase Otago</a> site.
+                Here's a photo of it :-<br/>
+                <img src="board-noshield.jpg" width="400" alt="A small U S B device about the size of a flash drive. The board states 'Moonbase, copyright Paul Campbell 2014' and has an Open Hardware logo"/>
+                </p>
+                <h3><img src="img/icon_21425/icon_21425.svg" width="24" /> Discussions</h3>
+                <p>Join the <a href="http://lists.onerng.info/groups/onerng-talk/">OneRNG Talk</a> discussion (sponsored by <a href="http://OnlineGroups.net/">OnlineGroups.net</a>, thanks!)</p>
+
+                <h3><img src="img/icon_32014/icon_32014.svg" width="24" /> Team Members</h3>
                 <p>The core team at OneRNG is currently :-</p>
                 <ul>
-                        <li>Jim Cheetham - Operational and Architectural Security for Unix and Networks - Dunedin, NZ - <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a><br/>Contact Jim directly for any general queries at this stage.</li>
-                        <li>Paul Campbell - Chip &amp; Embedded Systems Designer - Dunedin, NZ - <a href="paul@taniwha.com">paul@taniwha.com</a></li>
+                        <li>Jim Cheetham &mdash; Information Security &mdash; Dunedin, NZ &mdash; <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a></li>
+                        <li>Paul Campbell &mdash; Hardware Designer &mdash; Dunedin, NZ &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a></li>
                 </ul>
+
+                <h3><img src="img/icon_5086/icon_5086.svg" width="24" /> Licences</h3>
+                <p>Open Hardware (as per the definition at <a href="http://www.oshwa.org/definition/">http://www.oshwa.org/definition/</a>) for the actual hardware.</p>
+                <p>Open Source (GPLv3 and LGPLv3 as per the FSF, <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a>
+                and <a href="http://www.gnu.org/licenses/lgpl.html">http://www.gnu.org/licenses/lgpl.html</a> for the system firmware and OS utilities.</p>
+
+                <h3><img src="img/icon_51324/icon_51324.svg" width="24"/> Attributions</h3>
+                <p>This website uses icons from The Noun Project <a href="http://thenounproject.com">http://thenounproject.com</a>. See the <a href="img/">img/</a> directory for the icons and individual licenses.</p>
+                <p>This website also uses fonts downloaded from <a href="https://www.google.com/fonts">Google Fonts</a>
+                (not the hosted versions). See the <a href="fonts/">fonts/</a> directory for details.</p>
+        </div>
+</div>
         </body>
 </html>
