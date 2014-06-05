@@ -1,14 +1,21 @@
-
 /* reset */
 * {
   margin: 0;
   padding: 0;
 }
 
+@font-face {
+        font-family: Asap;
+        src: url(fonts/Asap/Asap-Regular.ttf);
+}
+@font-face {
+        font-family: 'Roboto Slab';
+        src: url(fonts/RobotoSlab/RobotoSlab-Regular.ttf);
+}
 body {
   font-size: 1.3em;
   background-color: #171717;
-  font-family: 'Roboto Slab', Georgia, Times New Roman, serif;
+  font-family: 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
 }
 
 div#page {
@@ -28,6 +35,7 @@ h1 {
   font-size: 3.2em;
   background-color: #2b7911;
   color: white;
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   padding: 12px;
   display: inline;
   -moz-box-shadow: 0 0 10px rgba(43,121,17,0.8);
@@ -37,6 +45,7 @@ h1 {
 h2 {
   padding: 12px;
   background-color: #2b7911;
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   color: white;
   -moz-box-shadow: 0 0 8px rgba(43,17,121,0.8);
   -webkit-box-shadow: 0 0 8px rgba(43,17,121,0.8);
@@ -46,6 +55,7 @@ h3 {
   padding: 8px;
   color: black;
   background-color: #335ba9;
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   }
 
 
@@ -82,3 +92,5 @@ a {
 a:hover {
   border-bottom: 2px solid #115da8;
 }
+
+/* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
