@@ -15,13 +15,42 @@
                 <hr/>
                 <script type="text/javascript" src="diceimg.js"></script>
                 <hr/>
-                <p>At this early stage, the team is small, the hardware is in very early prototype and the software is basic.
-                But we have some good ideas about how to provide a HWRNG that you can verify and trust.
-                Initially, we are concentrating on making a decent entropy source;
-                the actual generation of "random numbers" is deferred to your OS &amp; software.
+
+                <h4>Why do I need the OneRNG?</h4>
+                <p>You rely on a high-quality source of random numbers to maintain your privacy and security in computer
+                communication; but computers have too few sources of truly random data for the demands we place upon them.
+                Increasingly we have been distrusting the solutions given to us by others, as they are shown to be weak in
+                so many ways - because of faults in implementation, in design, or due to subversion by attackers who simply
+                do not care about the consequences of their actions (I'm looking at you, NSA).<!-- There's more discussion of
+                <a href="random.html">computers and random numbers</a> here, too. -->
                 </p>
+
+                <p>The OneRNG is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong> source of entropy;
+                we do not ask you to "trust" us, we give you the ability to verify for yourself that the OneRNG does
+                what we claim, and that it does nothing else.
+                </p>
+
+                <h4>Verifiable?</h4>
+                <ul>
+                    <li><p>The OneRNG is Open Hardware - you can get the full hardware schematics, you can build your own. You can
+                see the full details of every component that has been used.
+                    </p></li>
+
+                    <li><p>The OneRNG is Open Source Software - you can see how the firmware is written, you can modify it and use
+                your own version if you prefer.
+                    </p></li>
+
+                    <li><p>The OneRNG is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
+                    You can ask it to dump the current firmware to you, you can see all the components on the board.
+                    </p></li>
+
+                    <li><p>The OneRNG is reliable - if it detects instability in the entropy generators, it will stop delivering
+                    data and blink the status LEDs.
+                    </p></li>
+                </ul>
+
                 <h3><img src="img/icon_5909/icon_5909.svg" width="24"/> Current State</h3>
-                <p>We have a small number of units that have been assembled and programmed by Paul in his own lab,
+                <p>We have a small number of beta units that have been assembled and programmed by Paul in his own lab,
                 and these have been sent out to a few testers for comment.
                 <p>The current beta unit is described in detail over at the
                 <a href="http://moonbaseotago.com/onerng/">Moonbase Otago</a> site.
@@ -30,6 +59,9 @@
                 </p>
                 <h3><img src="img/icon_21425/icon_21425.svg" width="24" /> Discussions</h3>
                 <p>Join the <a href="http://lists.onerng.info/groups/onerng-talk/">OneRNG Talk</a> discussion (sponsored by <a href="http://OnlineGroups.net/">OnlineGroups.net</a>, thanks!)</p>
+                <p>Tell us about other approaches to solving these problems, about how we would address your specific use-cases,
+                what features you would like us to consider for future units. If you have built your own unit (whether the OneRNG
+                or any other style of HWRNG) let us know too.</p>
 
                 <h3><img src="img/icon_32014/icon_32014.svg" width="24" /> Team Members</h3>
                 <p>The core team at OneRNG is currently :-</p>
@@ -49,5 +81,10 @@
                 (not the hosted versions). See the <a href="fonts/">fonts/</a> directory for details.</p>
         </div>
 </div>
+
+<div name="footer">
+                <hr/>
+                <p>Copyright &copy; 2014 Jim Cheetham, jim@inode.co.nz</p>
+        </div>
         </body>
 </html>
