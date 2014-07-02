@@ -1,42 +1,78 @@
 <html>
         <head>
-                <title>OneRNG - Hardware Random Number Generator</title>
+                <title><span class="onerng">OneRNG</span> - Hardware Random Number Generator</title>
                 <link rel="stylesheet" href="onerng.css" type="text/css" media="screen, projection" />
         </head>
         <body>
         <div id="page">
         <div id="header">
-                <h1>OneRNG</h1>
+                <h1><a href="/"><span class="onerng">OneRNG</span></a></h1>
                 <h2>Open Hardware Random Number Generator</h2>
         </div>
 
         <div id="content">
-                <p>The OneRNG is a project to create a reliable and open hardware random number generator - one that can be verified by the user, one that can be trusted.</p>
+                <p>The <span class="onerng">OneRNG</span> is a project to create a reliable and open hardware random number generator - one that can be verified by the user, one that can be trusted.</p>
                 <hr/>
                 <script type="text/javascript" src="diceimg.js"></script>
                 <hr/>
 
-                <h3>Computers and Random Numbers</h3>
+                <h3>Entropy and Random Numbers</h3>
+                <p>I know the <span class="onerng">OneRNG</span> is called a "Random Number Generator", but that isn't really what it does!</p>
+                <p>Good random numbers have a couple of main properties - they are <em>unpredictable</em> and
+                evenly <em>distributed</em> across their full range. Let's see how the <span class="onerng">OneRNG</span> helps us make random numbers :-</p>
 
-                <h4>Why do I need the OneRNG?</h4>
-                <p>Random Numbers are essential for cryptography - for your privacy and security
-                when communicating, when on the Internet.<p>
-                <p>Computers are inherently predictable machines, and therefore terrible at "creating" high-quality
-                Random Numbers. You need something from the "Real World", from the quantum world of physics, to obtain
-                useful randomness, unpredictability, entropy.</p>
-                <p>The OneRNG measures this quantum unpredictability in multiple ways, and presents the resulting data
-                directly to your computer.</p>
+                <h4>The <span class="onerng">OneRNG</span> generates Entropy</h4>
+                <p>The <span class="onerng">OneRNG</span> generates informational entropy by measuring internal RF noise sources,
+                specifically an avalanche diode circuit (the primary source), and a channel-hopping radio receiver (secondary source).</p>
 
-                <h4>But why the OneRNG, and not these other "hardware random number generators" I can find?</h4>
-                <p>Because Random Numbers are the very cornerstone of your privacy, you rely totally on
-                your source of random data. As recent events have shown us, some immensely rich and powerful organisations
-                have been working hard to undermine the security of every computer system on the planet, so that they
-                can breach our privacy and spy on us all.</p>
-                <p>You have to be <strong>sure</strong> that you can trust the foundations of your computer security.
-                With the OneRNG, you don't have to trust anyone; you can <strong><em>verify</em></strong> that the device
-                does what we promise &ellip; and what is more, you can <strong><em>verify</em></strong> that it does NOT
-                do anything else; the OneRNG is not spying on you, or obeying some other master.</p>
+                <p>The noise from these systems is completely unpredictable, and we sample this noise
+                to produce a stream of data that can be loosely described as "random". However, this stream
+                of data will always be biased; for example there will tend to be more "1"s than "0"s.</p>
 
+                <p>In practice, the avalanche diode system picks up a slight DC bias, and generates about 5% more 1s
+                than 0s. The RF receiver tends to work better, with only about 0.14% more 1s; but it is potentially more
+                vulnerable to outside interference so we prefer to stick with the avalanche diode.</p>
+
+                <p>(If a noise source has failed, the <span class="onerng">OneRNG</span> firmware will detect the resultant sequence of very biased data
+                (such as "all 0s") and refuse to use the source, effectively shutting down.)</p>
+ 
+                <h4>A Whiter Shade of Pale</h4>
+                <p>We can see that the data coming from the <span class="onerng">OneRNG</span>'s primary source is fundamentally unpredictable, but isn't
+                perfectly evenly distributed. We can describe the quality of the primary source as delivering roughly
+                7 bits of entropy for every 8 bits of data.</p>
+
+                <p>This data needs to be improved before it can be used. This job is called "<em>whitening</em>", and the
+                technology generally used to do is is a "hash function". Hashes are intended to help compute data references
+                (rather than directly use the data themselves), and because they try hard to avoid "collision" (where two different
+                input data can produce the same output) and are generally not "invertable" (i.e. you cannot reasonably work backwards
+                from the output to discover what the input was), they turn out to be very good for smoothing out the distribution
+                of values in cases like ours.</p>
+
+                <p>We have a whitening hash function onboard the <span class="onerng">OneRNG</span> (a CRC16 generator) that you can use, but it is not enabled
+                by default - we recommend that instead you just add the <span class="onerng">OneRNG</span> as an entropy source to your existing Operating System's
+                random number generator.</p>
+
+                <h4>OS Entropy Sources</h4>
+                <p>The various different Operating Systems in use today collect their entropy from all the places that they believe
+                they can find real-world unpredictability. Computers are inherently completely predictable in their operation - if you
+                can describe the current condition of the machine, you know what state it will go to next, perfectly. Of course they
+                are increasingly complex, which makes this job impossible in practice!</p>
+
+                <p>Linux collects timing data from the keyboard and mouse usage, and from the IDE disks. You can also elect to
+                collect data from any specialist RNG hardware on your system, such as the Intel RdRand CPU instruction or a Trusted
+                Platform Module. Many systems today, especially servers, don't have keyboards, mice, or even IDE disks; and many 
+                people elect to distrust vendor hardware systems for highly sensitive tasks (although see "On Trust" (when I've written it)).</p>
+
+                <h4>OS Random Number Sources</h4>
+                <p>Sticking with the example of Linux, /dev/random provides random numbers by directly hashing the internal entropy pool.
+                Each use of /dev/random depletes the data available, and if the entropy sources cannot deliver sufficient data, your
+                request to read /dev/random will block - it will wait until more entropy is available.<p>
+                <p>For almost every normal task, you are supposed to instead use /dev/urandom. This interface internally does exactly
+                the same as /dev/random, except that when the entropy pool is close to exhaustion it will instead start to deliver data
+                from a software device, a PRNG that has been seeded from 'good' random data.</p>
+                <p>If you use the <span class="onerng">OneRNG</span> to populate Linux's entropy pool data directly, both systems are "improved" - high-quality reads
+                from /dev/random will not block (unless you are exceptionally greedy), and /dev/urandom will not need to fall back
+                to PRNGs.</p>
 
         </div>
         </div>
