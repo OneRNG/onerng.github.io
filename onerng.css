@@ -18,6 +18,11 @@ body {
   font-family: 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
 }
 
+span.onerng {
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  letter-spacing: -1px;
+  }
+
 div#page {
   background-color: white;
   margin-left: 160px;
@@ -41,6 +46,11 @@ h1 {
   -moz-box-shadow: 0 0 10px rgba(43,121,17,0.8);
   -webkit-box-shadow: 0 0 10px rgba(43,121,17,0.8);
 }
+
+h1  a {
+  color: white;
+  text-decoration: none;
+    }
 
 h2 {
   padding: 12px;
