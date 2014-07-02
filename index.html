@@ -1,53 +1,63 @@
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
         <head>
-                <title>OneRNG - Hardware Random Number Generator</title>
+                <title><span class="onerng">OneRNG</span> - Hardware Random Number Generator</title>
                 <link rel="stylesheet" href="onerng.css" type="text/css" media="screen, projection" />
+                <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         </head>
         <body>
         <div id="page">
         <div id="header">
-                <h1>OneRNG</h1>
+                <h1><span class="onerng">OneRNG</span></h1>
                 <h2>Open Hardware Random Number Generator</h2>
         </div>
 
         <div id="content">
-                <p>The OneRNG is a project to create a reliable and open hardware random number generator - one that can be verified by the user, one that can be trusted.</p>
+                <p>The <span class="onerng">OneRNG</span> is a project to create a reliable and open hardware random number generator - one that can be verified by the user, one that can be trusted.</p>
                 <hr/>
                 <script type="text/javascript" src="diceimg.js"></script>
                 <hr/>
 
-                <h4>Why do I need the OneRNG?</h4>
+                <h4>What is the <span class="onerng">OneRNG</span>?</h4>
                 <p>You rely on a high-quality source of random numbers to maintain your privacy and security in computer
                 communication; but computers have too few sources of truly random data for the demands we place upon them.
                 Increasingly we have been distrusting the solutions given to us by others, as they are shown to be weak in
                 so many ways - because of faults in implementation, in design, or due to subversion by attackers who simply
-                do not care about the consequences of their actions (I'm looking at you, NSA).<!-- There's more discussion of
-                <a href="random.html">computers and random numbers</a> here, too. -->
+                do not care about the consequences of their actions (I'm looking at you, NSA).
                 </p>
 
-                <p>The OneRNG is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong> source of entropy;
-                we do not ask you to "trust" us, we give you the ability to verify for yourself that the OneRNG does
+                <p>The <span class="onerng">OneRNG</span> is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong> source of entropy;
+                we do not ask you to "trust" us, we give you the ability to verify for yourself that the <span class="onerng">OneRNG</span> does
                 what we claim, and that it does nothing else.
                 </p>
 
+                <p>In general usage, we recommend that you use the <span class="onerng">OneRNG</span> as an entropy source for your operating system's
+                own RNG software; this allows you to consume extremely large quantities of random data without either blocking
+                or reducing the quality of the data.</p>
+
                 <h4>Verifiable?</h4>
                 <ul>
-                    <li><p>The OneRNG is Open Hardware - you can get the full hardware schematics, you can build your own. You can
-                see the full details of every component that has been used.
+                    <li><p>The <span class="onerng">OneRNG</span> is Open Hardware - you can get the full hardware schematics, you can build your own. You can
+                    see the full details of every component that has been used.
                     </p></li>
 
-                    <li><p>The OneRNG is Open Source Software - you can see how the firmware is written, you can modify it and use
-                your own version if you prefer.
+                    <li><p>The <span class="onerng">OneRNG</span> is Open Source Software - you can see how the firmware is written, you can modify it and use
+                    your own version if you prefer (you need a separate programmer unit (also Open Hardware of course) to actually
+                    modify the firmware, this cannot be done over the USB connection).
                     </p></li>
 
-                    <li><p>The OneRNG is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
+                    <li><p>The <span class="onerng">OneRNG</span> is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
                     You can ask it to dump the current firmware to you, you can see all the components on the board.
                     </p></li>
 
-                    <li><p>The OneRNG is reliable - if it detects instability in the entropy generators, it will stop delivering
+                    <li><p>The <span class="onerng">OneRNG</span> is fail-safe reliable - if it detects instability in the entropy generators, it will stop delivering
                     data and blink the status LEDs.
                     </p></li>
                 </ul>
+
+                <h4>More Information :</h4>
+                <p>Open What? | The Internals | <a href="random.html">Entropy &amp; Random Numbers</a> | On Trust | What's in a name?</p>
 
                 <h3><img src="img/icon_5909/icon_5909.svg" width="24"/> Current State</h3>
                 <p>We have a small number of beta units that have been assembled and programmed by Paul in his own lab,
@@ -58,16 +68,16 @@
                 <img src="board-noshield.jpg" width="400" alt="A small U S B device about the size of a flash drive. The board states 'Moonbase, copyright Paul Campbell 2014' and has an Open Hardware logo"/>
                 </p>
                 <h3><img src="img/icon_21425/icon_21425.svg" width="24" /> Discussions</h3>
-                <p>Join the <a href="http://lists.onerng.info/groups/onerng-talk/">OneRNG Talk</a> discussion (sponsored by <a href="http://OnlineGroups.net/">OnlineGroups.net</a>, thanks!)</p>
+                <p>Join the <a href="http://lists.onerng.info/groups/onerng-talk/"><span class="onerng">OneRNG</span> Talk</a> discussion (sponsored by <a href="http://OnlineGroups.net/">OnlineGroups.net</a>, thanks!)</p>
                 <p>Tell us about other approaches to solving these problems, about how we would address your specific use-cases,
-                what features you would like us to consider for future units. If you have built your own unit (whether the OneRNG
+                what features you would like us to consider for future units. If you have built your own unit (whether the <span class="onerng">OneRNG</span>
                 or any other style of HWRNG) let us know too.</p>
 
                 <h3><img src="img/icon_32014/icon_32014.svg" width="24" /> Team Members</h3>
-                <p>The core team at OneRNG is currently :-</p>
+                <p>The core team at <span class="onerng">OneRNG</span> is currently :-</p>
                 <ul>
                         <li>Jim Cheetham &mdash; Information Security &mdash; Dunedin, NZ &mdash; <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a></li>
-                        <li>Paul Campbell &mdash; Hardware Designer &mdash; Dunedin, NZ &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a></li>
+                        <li>Paul Campbell &mdash; Hardware Design &mdash; Dunedin, NZ &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a></li>
                 </ul>
 
                 <h3><img src="img/icon_5086/icon_5086.svg" width="24" /> Licences</h3>
