@@ -1,6 +1,6 @@
 <html>
         <head>
-                <title><span class="onerng">OneRNG</span> - Hardware Random Number Generator</title>
+                <title>OneRNG - Hardware Random Number Generator</title>
                 <link rel="stylesheet" href="onerng.css" type="text/css" media="screen, projection" />
         </head>
         <body>
@@ -19,7 +19,21 @@
                 <h3>Entropy and Random Numbers</h3>
                 <p>I know the <span class="onerng">OneRNG</span> is called a "Random Number Generator", but that isn't really what it does!</p>
                 <p>Good random numbers have a couple of main properties - they are <em>unpredictable</em> and
-                evenly <em>distributed</em> across their full range. Let's see how the <span class="onerng">OneRNG</span> helps us make random numbers :-</p>
+                evenly <em>distributed</em> across their full range. Sometimes it can be difficult to determine the difference,
+                so here's a concrete example - look at the dice images at the top of this page. Every time the page loads, the
+                dice are different; effectively unpredictable. Except you can always predict with 100% accuracy the value of the final
+                die, once you know what the other 5 are ...</p>
+
+                <p>The reason for that is that the dice are simply in a randomised <em>order</em>; there are always 6 unique
+                values, from 1 to 6 inclusive. Distribution is perfectly even, and while the first die value is as unpredictable
+                as we can get it, the remaining ones are increasingly
+                predictable to the point of uselessness (in practice the whole
+                thing is driven by JavaScript's Math.random() function, which
+                isn't really all that random internally at all!  See the small
+                <a href="diceimg.js">source file</a> for details).</p>
+                
+                <p>So you need to have both features to be useful. Let's see how the <span class="onerng">OneRNG</span> helps
+                us make random numbers :-</p>
 
                 <h4>The <span class="onerng">OneRNG</span> generates Entropy</h4>
                 <p>The <span class="onerng">OneRNG</span> generates informational entropy by measuring internal RF noise sources,
@@ -61,7 +75,8 @@
                 <p>Linux collects timing data from the keyboard and mouse usage, and from the IDE disks. You can also elect to
                 collect data from any specialist RNG hardware on your system, such as the Intel RdRand CPU instruction or a Trusted
                 Platform Module. Many systems today, especially servers, don't have keyboards, mice, or even IDE disks; and many 
-                people elect to distrust vendor hardware systems for highly sensitive tasks (although see "On Trust" (when I've written it)).</p>
+                people elect to distrust vendor hardware systems for highly sensitive tasks (although see
+                <a href="trust.html">"On Trust"</a>).</p>
 
                 <h4>OS Random Number Sources</h4>
                 <p>Sticking with the example of Linux, /dev/random provides random numbers by directly hashing the internal entropy pool.
