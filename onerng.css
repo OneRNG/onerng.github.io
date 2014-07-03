@@ -22,6 +22,10 @@ span.onerng {
   font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   letter-spacing: -1px;
   }
+span.citation {
+  vertical-align: super;
+  font-size: 0.7em;
+}
 
 div#page {
   background-color: white;
@@ -50,8 +54,12 @@ h1 {
 h1  a {
   color: white;
   text-decoration: none;
+  background-color: #2b7911;
     }
 
+h1 a:hover {
+  border-bottom: none;
+}
 h2 {
   padding: 12px;
   background-color: #2b7911;
@@ -94,6 +102,12 @@ li {
   margin: 6px 0 6px 16px;
 }
 
+blockquote {
+    width: 70%;
+    margin-left: 10%;
+    font-style: italic;
+}
+
 a {
   text-decoration: none;
   color: #115da8;
@@ -101,6 +115,10 @@ a {
 
 a:hover {
   border-bottom: 2px solid #115da8;
+}
+
+img#floatleft {
+        float: left;
 }
 
 /* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
