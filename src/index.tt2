@@ -22,6 +22,7 @@ or reducing the quality of the data.
 <ul>
     <li>The [% onerng %] is Open Hardware - you can get the full hardware schematics, you can build your own. You can
     see the full details of every component that has been used.
+    You can visually check every component on the boards that we supply.
     </li>
 
     <li>The [% onerng %] is Open Source Software - you can see how the firmware is written, you can modify it and use
