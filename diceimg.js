@@ -27,4 +27,3 @@ for (var i=0; i<len; ++i) {
         // The img filenames are ugly ...
         document.write ("<img src='img/icon_",(dice[i]),"/icon_",(dice[i]),".svg'/>");
 }
-

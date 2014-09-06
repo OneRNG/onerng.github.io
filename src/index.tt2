@@ -1,60 +1,38 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-        <title>OneRNG - Hardware Random Number Generator</title>
-        <link rel="stylesheet" href="onerng.css" type="text/css" />
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-</head>
+[% PROCESS header %]
+<h4>What is the [%- onerng -%]?</h4>
 
-<body>
-<div class="page">
-<div class="header">
-        <h1><span class="onerng"><a href="index.html">OneRNG</a></span></h1>
-        <h2><a href="index.html">Open Hardware Random Number Generator</a></h2>
-        <p>The <span class='onerngbg'>OneRNG</span> is a project to create a reliable and open hardware random number generator - one that can be verified by the user and can be trusted.</p>
-        <script type="text/javascript" src="diceimg.js"></script>
-</div>
-<div id="content">
-
-<h4>What is the <span class='onerngbg'>OneRNG</span>?</h4>
-
-<p>
+[% FILTER html_para -%]
 You rely on a high-quality source of random numbers to maintain your privacy and security in computer
 communication; but computers have too few sources of truly random data for the demands we place upon them.
 Increasingly we have been distrusting the solutions given to us by others, as they are shown to be weak in
 so many ways - because of faults in implementation, in design, or due to subversion by attackers who simply
 do not care about the consequences of their actions (I'm looking at you, NSA).
-</p>
 
-<p>
-The <span class='onerngbg'>OneRNG</span> is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong> source of entropy;
-we do not ask you to "trust" us, we give you the ability to verify for yourself that the <span class='onerngbg'>OneRNG</span> does
+The [% onerng %] is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong> source of entropy;
+we do not ask you to "trust" us, we give you the ability to verify for yourself that the [% onerng %] does
 what we claim, and that it does nothing else.
-</p>
 
-<p>
-In general usage, we recommend that you use the <span class='onerngbg'>OneRNG</span> as an entropy source for your operating system's
+In general usage, we recommend that you use the [% onerng %] as an entropy source for your operating system's
 own RNG software; this allows you to consume extremely large quantities of random data without either blocking
 or reducing the quality of the data.
-</p>
-
+[% END %]
 
 <h4>Verifiable?</h4>
 <ul>
-    <li><p>The <span class='onerngbg'>OneRNG</span> is Open Hardware - you can get the full hardware schematics, you can build your own. You can
+    <li><p>The [% onerng %] is Open Hardware - you can get the full hardware schematics, you can build your own. You can
     see the full details of every component that has been used.
     </p></li>
 
-    <li><p>The <span class='onerngbg'>OneRNG</span> is Open Source Software - you can see how the firmware is written, you can modify it and use
+    <li><p>The [% onerng %] is Open Source Software - you can see how the firmware is written, you can modify it and use
     your own version if you prefer (you need a separate programmer unit (also Open Hardware of course) to actually
     modify the firmware, this cannot be done over the USB connection).
     </p></li>
 
-    <li><p>The <span class='onerngbg'>OneRNG</span> is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
+    <li><p>The [% onerng %] is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
     You can ask it to dump the current firmware to you, you can see all the components on the board.
     </p></li>
 
-    <li><p>The <span class='onerngbg'>OneRNG</span> is fail-safe reliable - if it detects instability in the entropy generators, it will stop delivering
+    <li><p>The [% onerng %] is fail-safe reliable - if it detects instability in the entropy generators, it will stop delivering
     data and blink the status LEDs.
     </p></li>
 </ul>
@@ -76,13 +54,13 @@ Here's a photo of it :-<br/>
 <img src="board-noshield.jpg" width="400" alt="A small U S B device about the size of a flash drive. The board states 'Moonbase, copyright Paul Campbell 2014' and has an Open Hardware logo"/>
 </p>
 <h3><img src="img/icon_21425/icon_21425.svg" width="24" /> Discussions</h3>
-<p>Join the <a href="http://lists.onerng.info/groups/onerng-talk/"><span class='onerngbg'>OneRNG</span> Talk</a> discussion (sponsored by <a href="http://OnlineGroups.net/">OnlineGroups.net</a>, thanks!)</p>
+<p>Join the <a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Talk</a> discussion (sponsored by <a href="http://OnlineGroups.net/">OnlineGroups.net</a>, thanks!)</p>
 <p>Tell us about other approaches to solving these problems, about how we would address your specific use-cases,
-what features you would like us to consider for future units. If you have built your own unit (whether the <span class='onerngbg'>OneRNG</span>
+what features you would like us to consider for future units. If you have built your own unit (whether the [% onerng %]
 or any other style of HWRNG) let us know too.</p>
 
 <h3><img src="img/icon_32014/icon_32014.svg" width="24" /> Team Members</h3>
-<p>The core team at <span class='onerngbg'>OneRNG</span> is currently :-</p>
+<p>The core team at [% onerng %] is currently :-</p>
 <ul>
         <li>Jim Cheetham &mdash; Information Security &mdash; Dunedin, NZ &mdash; <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a></li>
         <li>Paul Campbell &mdash; Hardware Design &mdash; Dunedin, NZ &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a></li>
@@ -99,11 +77,4 @@ and <a href="http://www.gnu.org/licenses/lgpl.html">http://www.gnu.org/licenses/
 (not the hosted versions). See the <a href="fonts/">fonts/</a> directory for details.</p>
 </div>
 
-<div name="footer">
-                <hr/>
-                <p>Website copyright &copy; 2014 Jim Cheetham, jim@inode.co.nz</p>
-        </div>
-        </body>
-<!-- rendered index.tt2, last modified at 2014-09-05 21:22:39 NZST -->
-</html>
-
+[% INCLUDE footer %]

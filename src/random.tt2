@@ -1,37 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-        <title>OneRNG - Hardware Random Number Generator</title>
-        <link rel="stylesheet" href="onerng.css" type="text/css" />
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-</head>
-
-<body>
-<div class="page">
-<div class="header">
-        <h1><span class="onerng"><a href="index.html">OneRNG</a></span></h1>
-        <h2><a href="index.html">Open Hardware Random Number Generator</a></h2>
-        <p>The <span class='onerngbg'>OneRNG</span> is a project to create a reliable and open hardware random number generator - one that can be verified by the user and can be trusted.</p>
-        <script type="text/javascript" src="diceimg.js"></script>
-</div>
-<div id="content">
-
+[% PROCESS header %]
 
 <h3>Entropy and Random Numbers</h3>
-<p>
+[% FILTER html_para %]
+I know the [% onerng %] is called a "Random Number Generator", but that isn't really what it does!
 
-I know the <span class='onerngbg'>OneRNG</span> is called a "Random Number Generator", but that isn't really what it does!
-</p>
-
-<p>
 Good random numbers have a couple of main properties - they are <em>unpredictable</em> and
 evenly <em>distributed</em> across their full range. Sometimes it can be difficult to determine the difference,
 so here's a concrete example - look at the dice images at the top of this page. Every time the page loads, the
 dice are different; effectively unpredictable. Except you can always predict with 100% accuracy the value of the final
 die, once you know what the other 5 are ...
-</p>
 
-<p>
 The reason for that is that the dice are simply in a randomised <em>order</em>; there are always 6 unique
 values, from 1 to 6 inclusive. Distribution is perfectly even, and while the first die value is as unpredictable
 as we can get it, the remaining ones are increasingly
@@ -39,107 +17,73 @@ predictable to the point of uselessness (in practice the whole
 thing is driven by JavaScript's Math.random() function, which
 isn't really all that random internally at all!  See the small
 <a href="diceimg.js">source file</a> for details).
-</p>
 
-<p>
-So you need to have both features to be useful. Let's see how the <span class='onerngbg'>OneRNG</span> helps
+So you need to have both features to be useful. Let's see how the [% onerng %] helps
 us make random numbers :-
-</p>
+[% END %]
 
-
-<h4>The <span class='onerngbg'>OneRNG</span> generates Entropy</h4>
-<p>
-
-The <span class='onerngbg'>OneRNG</span> generates informational entropy by measuring internal RF noise sources,
+<h4>The [% onerng %] generates Entropy</h4>
+[% FILTER html_para %]
+The [% onerng %] generates informational entropy by measuring internal RF noise sources,
 specifically an avalanche diode circuit (the primary source), and a channel-hopping radio receiver (secondary source).
-</p>
 
-<p>
 The noise from these systems is completely unpredictable, and we sample this noise
 to produce a stream of data that can be loosely described as "random". However, this stream
 of data will always be biased; for example there will tend to be more "1"s than "0"s.
-</p>
 
-<p>
 In practice, the avalanche diode system picks up a slight DC bias, and generates about 5% more 1s
 than 0s. The RF receiver tends to work better, with only about 0.14% more 1s; but it is potentially more
 vulnerable to outside interference so we prefer to stick with the avalanche diode.
-</p>
 
-<p>
-(If a noise source has failed, the <span class='onerngbg'>OneRNG</span> firmware will detect the resultant sequence of very biased data
+(If a noise source has failed, the [% onerng %] firmware will detect the resultant sequence of very biased data
 (such as "all 0s") and refuse to use the source, effectively shutting down.)
-</p>
-
+[% END %]
 
 <h4>A Whiter Shade of Pale</h4>
-<p>
-
-We can see that the data coming from the <span class='onerngbg'>OneRNG</span>'s primary source is fundamentally unpredictable, but isn't
+[% FILTER html_para %]
+We can see that the data coming from the [% onerng %]'s primary source is fundamentally unpredictable, but isn't
 perfectly evenly distributed. We can describe the quality of the primary source as delivering roughly
 7 bits of entropy for every 8 bits of data.
-</p>
 
-<p>
 This data needs to be improved before it can be used. This job is called "<em>whitening</em>", and the
 technology generally used to do is is a "hash function". Hashes are intended to help compute data references
 (rather than directly use the data themselves), and because they try hard to avoid "collision" (where two different
 input data can produce the same output) and are generally not "invertable" (i.e. you cannot reasonably work backwards
 from the output to discover what the input was), they turn out to be very good for smoothing out the distribution
 of values in cases like ours.
-</p>
 
-<p>
-We have a whitening hash function onboard the <span class='onerngbg'>OneRNG</span> (a CRC16 generator) that you can use, but it is not enabled
-by default - we recommend that instead you just add the <span class='onerngbg'>OneRNG</span> as an entropy source to your existing Operating System's
+We have a whitening hash function onboard the [% onerng %] (a CRC16 generator) that you can use, but it is not enabled
+by default - we recommend that instead you just add the [% onerng %] as an entropy source to your existing Operating System's
 random number generator.
-</p>
-
+[% END %]
 
 <h4>OS Entropy Sources</h4>
-<p>
-
+[% FILTER html_para %]
 The various different Operating Systems in use today collect their entropy from all the places that they believe
 they can find real-world unpredictability. Computers are inherently completely predictable in their operation - if you
 can describe the current condition of the machine, you know what state it will go to next, perfectly. Of course they
 are increasingly complex, which makes this job impossible in practice!
-</p>
 
-<p>
 Linux collects timing data from the keyboard and mouse usage, and from the IDE disks. You can also elect to
 collect data from any specialist RNG hardware on your system, such as the Intel RdRand CPU instruction or a Trusted
 Platform Module. Many systems today, especially servers, don't have keyboards, mice, or even IDE disks; and many 
 people elect to distrust vendor hardware systems for highly sensitive tasks (although see
 <a href="trust.html">"On Trust"</a>).
-</p>
-
+[% END %]
 
 <h4>OS Random Number Sources</h4>
-<p>
-
+[% FILTER html_para %]
 Sticking with the example of Linux, /dev/random provides random numbers by directly hashing the internal entropy pool.
 Each use of /dev/random depletes the data available, and if the entropy sources cannot deliver sufficient data, your
 request to read /dev/random will block - it will wait until more entropy is available.<p>
-</p>
 
-<p>
 For almost every normal task, you are supposed to instead use /dev/urandom. This interface internally does exactly
 the same as /dev/random, except that when the entropy pool is close to exhaustion it will instead start to deliver data
 from a software device, a PRNG that has been seeded from 'good' random data.
-</p>
 
-<p>
-If you use the <span class='onerngbg'>OneRNG</span> to populate Linux's entropy pool data directly, both systems are "improved" - high-quality reads
+If you use the [% onerng %] to populate Linux's entropy pool data directly, both systems are "improved" - high-quality reads
 from /dev/random will not block (unless you are exceptionally greedy), and /dev/urandom will not need to fall back
 to PRNGs.
-</p>
+[% END %]
 
-
-<div name="footer">
-                <hr/>
-                <p>Website copyright &copy; 2014 Jim Cheetham, jim@inode.co.nz</p>
-        </div>
-        </body>
-<!-- rendered random.tt2, last modified at 2014-09-06 14:51:59 NZST -->
-</html>
-
+[% INCLUDE footer %]

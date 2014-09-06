@@ -1,38 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-        <title>OneRNG - Hardware Random Number Generator</title>
-        <link rel="stylesheet" href="onerng.css" type="text/css" />
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-</head>
-
-<body>
-<div class="page">
-<div class="header">
-        <h1><span class="onerng"><a href="index.html">OneRNG</a></span></h1>
-        <h2><a href="index.html">Open Hardware Random Number Generator</a></h2>
-        <p>The <span class='onerngbg'>OneRNG</span> is a project to create a reliable and open hardware random number generator - one that can be verified by the user and can be trusted.</p>
-        <script type="text/javascript" src="diceimg.js"></script>
-</div>
-<div id="content">
-
+[% PROCESS header %]
 <h3>On Trust and Distrust</h3>
 
 <h4>Distrust is easy</h4>
-<p>
-
+[% FILTER html_para %]
 We seem to be making a major claim that you need to place an unusual level of trust in
 your RNG or Entropy source, because it is a critical piece of infrastructure for your security
 and privacy.
-</p>
 
-<p>
 Certainly in 2013 we discovered that the NSA at least had been involved in large-scale
 attacks against the use of cryptography, and in some cases in the very design of some of
 the crypto systems themselves. But does this mean that we should <em>really</em> be worried?
-</p>
 
-<p>
 If your RNG has been compromised, attackers know how you create all of your "secret"
 keys, and know how to read all of your communications. The NSA paid RSA US$10 million
 in order to get them to use a compromised RNG by default in their BSAFE product, so
@@ -40,12 +18,10 @@ we know that an unsafe RNG is worth real good hard cash to the right buyer.
 You don't have to believe me, you can read it all on
 <a href="http://en.wikipedia.org/wiki/RSA_BSAFE">the Wikipedia page</a>.
 <span class="citation">[citation needed]</span>
-</p>
-
+[% END %]
 
 <h4>But can you verify things?</h4>
-<p>
-
+[% FILTER html_para %]
 Intel have built an RNG into their recent chips, referred to by the name of the
 CPU instruction that invokes it, RdRand. This is a well-designed subsystem,
 that promises to produce relatively large quantities of high-quality randomness.
@@ -53,33 +29,25 @@ The promises it makes are so far in advance of the general OS state of the art o
 collecting limited hardware entropy, that several people have advocated for simply
 bypassing all the operating system's PRNG work, and just using Intel's RNG directly
 all the time.
-</p>
 
-<p>
 And then the NSA documents leaked by Edward Snowden were released stating :
 <blockquote>the Sigint Enabling Project had found ways inside some of the encryption chips that scramble information for businesses and governments, [...] by working with chipmakers to insert back doors</blockquote>
 and the obvious questions were raised - what if this referred to Intel, one of the
 world's largest chipmakers?
-</p>
 
-<p>
 After all, even though Intel have shown us how RdRand works, there is no way to
 actually verify that the chips you have in your servers actually have that circuit,
 or whether it is actually being used by the CPU when you call for data, or that the
 software whitening stage is really being done the way you need.
-</p>
 
-<p>
-And this is why the <span class='onerngbg'>OneRNG</span> strives to earn your trust by being <em>verifiable</em>.
+And this is why the [% onerng %] strives to earn your trust by being <em>verifiable</em>.
 We have built a simple system that you can visually inspect, with components that
 can't be hiding any additional malicious software; and in any case, you can inject
 your own software instead if you prefer!
-</p>
-
+[% END %]
 
 <h4>Is it plausible?</h4>
-<p>
-
+[% FILTER html_para %]
 On the other side of the coin, would an attacker really gain significant value in the
 general case, by compromising your RNG? Your software can and should test
 the output of the RNG systems to detect this sort of thing.
@@ -87,30 +55,18 @@ And there are huge numbers of potential attack points all
 over your system that will <em>also</em> compromise your secure communications; with the
 advantage that many of these other attacks have actually been seen in the wild, multiple
 times, and really do work.
-</p>
 
-<p>
 And the other part of the question - if your communications have been compromised,
 but that compromise is by an agency such as the NSA, should you really be concerned?
 Are they actually an entity that you should be defending against?
-</p>
-
+[% END %]
 
 <h4>Imponderables</h4>
-<p>
-
+[% FILTER html_para %]
 We don't have an answer to those questions for you, and in fact we can't, because it
 is <em>your</em> responsibility. All we have to do is to give you an extra option;
 the option to have an independent hardware entropy source that you can verify to
 a high standard, and ultimately to trust.
-</p>
+[% END %]
 
-
-<div name="footer">
-                <hr/>
-                <p>Website copyright &copy; 2014 Jim Cheetham, jim@inode.co.nz</p>
-        </div>
-        </body>
-<!-- rendered trust.tt2, last modified at 2014-09-06 14:55:26 NZST -->
-</html>
-
+[% INCLUDE footer %]

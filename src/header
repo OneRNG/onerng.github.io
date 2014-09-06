@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+        <title>OneRNG - Hardware Random Number Generator</title>
+        <link rel="stylesheet" href="onerng.css" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+[% onerng = "<span class='onerngbg'>OneRNG</span>" %]
+<body>
+<div class="page">
+<div class="header">
+        <h1><span class="onerng"><a href="index.html">OneRNG</a></span></h1>
+        <h2><a href="index.html">Open Hardware Random Number Generator</a></h2>
+        <p>The [% onerng %] is a project to create a reliable and open hardware random number generator - one that can be verified by the user and can be trusted.</p>
+        <script type="text/javascript" src="diceimg.js"></script>
+</div>
+<div id="content">

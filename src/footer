@@ -1,0 +1,8 @@
+<div name="footer">
+                <hr/>
+                <p>Website copyright &copy; 2014 Jim Cheetham, jim@inode.co.nz</p>
+        </div>
+        </body>
+[% USE Date -%]
+<!-- rendered [%- template.name -%], last modified at [%- Date.format(template.modtime,'%F %T %Z') -%] -->
+</html>

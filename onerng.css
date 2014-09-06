@@ -22,12 +22,18 @@ span.onerng {
   font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   letter-spacing: -1px;
   }
+span.onerngbg {
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  letter-spacing: -1px;
+  background-color: #ddffdd;
+  border-radius: 23px;
+  }
 span.citation {
   vertical-align: super;
   font-size: 0.7em;
 }
 
-div#page {
+div.page {
   background-color: white;
   margin-left: 160px;
   width: 70%;
@@ -36,43 +42,45 @@ div#page {
   -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.3);
 }
 
-div#header {
+div.header {
   margin-bottom: 32px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 23px;
+  background-color: #ddffdd;
 }
 
-h1 {
+div.header h1 {
+  color: white;
   font-size: 3.2em;
   background-color: #2b7911;
-  color: white;
   font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   padding: 12px;
   display: inline;
-  -moz-box-shadow: 0 0 10px rgba(43,121,17,0.8);
-  -webkit-box-shadow: 0 0 10px rgba(43,121,17,0.8);
+  border: 2px solid;
+  border-radius: 23px;
+/*  -moz-box-shadow: 0 0 10px rgba(43,121,17,0.8);
+  -webkit-box-shadow: 0 0 10px rgba(43,121,17,0.8); */
 }
-
-h1  a {
+div.header h2 {
   color: white;
-  text-decoration: none;
-  background-color: #2b7911;
-    }
-
-h1 a:hover {
-  border-bottom: none;
-}
-h2 {
   padding: 12px;
   background-color: #2b7911;
   font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   color: white;
-  -moz-box-shadow: 0 0 8px rgba(43,17,121,0.8);
-  -webkit-box-shadow: 0 0 8px rgba(43,17,121,0.8);
+  /* -moz-box-shadow: 0 0 8px rgba(43,17,121,0.8);
+  -webkit-box-shadow: 0 0 8px rgba(43,17,121,0.8); */
+}
+div.header a {
+  text-decoration: none;
+  color: white;
 }
 
 h3 {
   padding: 8px;
   color: black;
-  background-color: #335ba9;
+  background-color: #88bb88;
+  border-radius: 23px;
   font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
   }
 
@@ -93,7 +101,6 @@ p {
   margin: 8px 0px;
 }
 
-
 ul {
   padding-left: 4px;
 }
@@ -110,11 +117,11 @@ blockquote {
 
 a {
   text-decoration: none;
-  color: #115da8;
+  color: #2b7911;
 }
 
 a:hover {
-  border-bottom: 2px solid #115da8;
+  border-bottom: 2px solid #2b7911;
 }
 
 img#floatleft {
@@ -122,3 +129,4 @@ img#floatleft {
 }
 
 /* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
+/* The end result might not look much like it, but it was the starting-point ...   */
