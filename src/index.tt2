@@ -26,8 +26,10 @@ or reducing the quality of the data.
     </li>
 
     <li>The [% onerng %] is Open Source Software - you can see how the firmware is written, you can modify it and use
-    your own version if you prefer (you need a separate programmer unit (also Open Hardware of course) to actually
-    modify the firmware, this cannot be done over the USB connection).
+    your own version if you prefer - you need a separate programmer unit (also Open Hardware of course) to actually
+    modify the firmware, this cannot be done over the USB connection. Equally, the [% onerng %] isn't
+    <a href="http://www.darkreading.com/endpoint/when-good-usb-devices-go-bad/d/d-id/1297876">"bad USB"</a> - it
+    cannot be subverted over USB, and it will not attack you over USB.
     </li>
 
     <li>The [% onerng %] is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
