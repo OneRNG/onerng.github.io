@@ -23,7 +23,9 @@ var dice = shuffle([10541, 10542, 10543, 10544, 10545, 27626]);
 
 // Output the dice links as per the new array ...
 var len = dice.length;
+document.write ("<div class='sixd6'>");
 for (var i=0; i<len; ++i) {
         // The img filenames are ugly ...
         document.write ("<img src='img/icon_",(dice[i]),"/icon_",(dice[i]),".svg'/>");
 }
+document.write ("</div>");
