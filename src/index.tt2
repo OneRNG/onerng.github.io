@@ -26,10 +26,7 @@ or reducing the quality of the data.
     </li>
 
     <li>The [% onerng %] is Open Source Software - you can see how the firmware is written, you can modify it and use
-    your own version if you prefer - you need a separate programmer unit (also Open Hardware of course) to actually
-    modify the firmware, this cannot be done over the USB connection. Equally, the [% onerng %] isn't
-    <a href="http://www.darkreading.com/endpoint/when-good-usb-devices-go-bad/d/d-id/1297876">"bad USB"</a> - it
-    cannot be subverted over USB, and it will not attack you over USB.
+    your own version if you prefer (although you'll need a separate programmer unit, also Open Hardware of course)
     </li>
 
     <li>The [% onerng %] is <em>verifiable</em> - you can prove that it does exactly what you expect, and nothing else.
@@ -39,6 +36,10 @@ or reducing the quality of the data.
     <li>The [% onerng %] is fail-safe reliable - if it detects instability in the entropy generators, it will stop delivering
     data and blink the status LEDs.
     </li>
+
+    <li>The [% onerng %] is safe to attach to your systems. Because you can only modify the firmware over a dedicated
+    connection on the board, it cannot be subverted over USB, and it will not
+    <a href="http://www.darkreading.com/endpoint/when-good-usb-devices-go-bad/d/d-id/1297876">attack you</a> over USB.
 </ul>
 </div>
 
