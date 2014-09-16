@@ -1,5 +1,8 @@
 This is the source directory for the website HTML.
+
+Run 'make' to compile this site into the parent directory.
+
 The *.html files here are processed with Template::Toolkit and the
 results are deposited in the parent directory.
-$ ttree -f ./ttreerc
-All other files (css, images, and so on) have their master copies in the parent directory.
+
+All other files (css, images, and so on) are copied verbatim.
