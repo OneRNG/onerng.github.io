@@ -2,15 +2,27 @@
 <h4>What is the [%- onerng -%]?</h4>
 
 [% FILTER html_para -%]
+The [% onerng %] is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong>
+USB-connected source of entropy;
+we do not ask you to "trust" us, we give you the ability to verify for yourself that the [% onerng %] does
+what we claim, and that it does nothing else.
+
+<div class="imgbar">
+<a href="img_Board.html"><img src="img/Board.png" width="30%"/></a>
+<a href="img_BoardAndTinfoilHat.html"><img src="img/BoardAndTinfoilHat.png" width="30%"/></a>
+<a href="img_BoardNoHat.html"><img src="img/BoardNoHat.png" width="30%"/></a>
+</div>
+
+[% onerng %] collects entropy from an avalanche diode circuit, and from a channel-hopping RF receiver.
+It even has a &ldquo;tinfoil hat&rdquo; to prevent RF interference &mdash;
+you can remove the hat in order to visually verify the components being used.
+
+
 You rely on a high-quality source of random numbers to maintain your privacy and security in computer
 communication; but computers have too few sources of truly random data for the demands we place upon them.
 Increasingly we have been distrusting the solutions given to us by others, as they are shown to be weak in
 so many ways - because of faults in implementation, in design, or due to subversion by attackers who simply
 do not care about the consequences of their actions (I'm looking at you, NSA).
-
-The [% onerng %] is an Open Hardware, Open Source, simple and <strong><em>verifiable</em></strong> source of entropy;
-we do not ask you to "trust" us, we give you the ability to verify for yourself that the [% onerng %] does
-what we claim, and that it does nothing else.
 
 In general usage, we recommend that you use the [% onerng %] as an entropy source for your operating system's
 own RNG software; this allows you to consume extremely large quantities of random data without either blocking
@@ -60,8 +72,6 @@ and these have been sent out to a few testers for comment.
 
 The current beta unit is described in detail over at the
 <a href="http://moonbaseotago.com/onerng/">Moonbase Otago</a> site.
-Here's a photo of it :-<br/>
-<img src="board-noshield.jpg" width="400" alt="A small U S B device about the size of a flash drive. The board states 'Moonbase, copyright Paul Campbell 2014' and has an Open Hardware logo"/>
 [% END %]
 
 <h3><img src="img/icon_21425/icon_21425.svg" width="24" /> Discussions</h3>

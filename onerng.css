@@ -1,17 +1,9 @@
 /* reset */
-* {
-  margin: 0;
-  padding: 0;
-}
+* { margin: 0; padding: 0; }
 
-@font-face {
-        font-family: Asap;
-        src: url(fonts/Asap/Asap-Regular.ttf);
-}
-@font-face {
-        font-family: 'Roboto Slab';
-        src: url(fonts/RobotoSlab/RobotoSlab-Regular.ttf);
-}
+@font-face { font-family: Asap; src: url(fonts/Asap/Asap-Regular.ttf); }
+@font-face { font-family: 'Roboto Slab'; src: url(fonts/RobotoSlab/RobotoSlab-Regular.ttf); }
+
 body {
   font-size: 1.3em;
   background-color: #171717;
@@ -71,10 +63,7 @@ div.header h2 {
   /* -moz-box-shadow: 0 0 8px rgba(43,17,121,0.8);
   -webkit-box-shadow: 0 0 8px rgba(43,17,121,0.8); */
 }
-div.header a {
-  text-decoration: none;
-  color: white;
-}
+div.header a { text-decoration: none; color: white; }
 
 h3 {
   padding: 8px;
@@ -96,37 +85,21 @@ pre.code {
   -webkit-box-shadow: 2px 2px 10px rgba(59,59,59,0.8);
 }
 
-p {
-  line-height: 130%;
-  margin: 8px 0px;
-}
+p { line-height: 130%; margin: 8px 0px; }
 
-ul {
-  padding-left: 4px;
-}
+ul { padding-left: 4px; }
 
-li {
-  margin: 6px 0 6px 16px;
-}
+li { margin: 6px 0 6px 16px; }
 
-blockquote {
-    width: 70%;
-    margin-left: 10%;
-    font-style: italic;
-}
+blockquote { width: 70%; margin-left: 10%; font-style: italic; }
 
-a {
-  text-decoration: none;
-  color: #2b7911;
-}
+a { text-decoration: none; color: #2b7911; }
 
-a:hover {
-  border-bottom: 2px solid #2b7911;
-}
+a:hover { border-bottom: 2px solid #2b7911; }
 
-img#floatleft {
-        float: left;
-}
+div.imgbar a { border: none; }
+
+div.CC img { float: left; }
 
 /* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
 /* The end result might not look much like it, but it was the starting-point ...   */
