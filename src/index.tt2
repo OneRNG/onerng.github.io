@@ -8,9 +8,9 @@ we do not ask you to "trust" us, we give you the ability to verify for yourself 
 what we claim, and that it does nothing else.
 
 <div class="imgbar">
-<a href="img_Board.html"><img src="img/Board.png" width="30%"/></a>
-<a href="img_BoardAndTinfoilHat.html"><img src="img/BoardAndTinfoilHat.png" width="30%"/></a>
-<a href="img_BoardNoHat.html"><img src="img/BoardNoHat.png" width="30%"/></a>
+<a href="img_Board.html"><img src="img/Board-800.png" width="33%"/></a>
+<a href="img_BoardAndTinfoilHat.html"><img src="img/BoardAndTinfoilHat-800.png" width="33%"/></a>
+<a href="img_BoardNoHat.html"><img src="img/BoardNoHat-800.png" width="33%"/></a>
 </div>
 
 [% onerng %] collects entropy from an avalanche diode circuit, and from a channel-hopping RF receiver.
