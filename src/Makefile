@@ -1,6 +1,6 @@
 all:
 	mkdir -p ../img
-	cp img/*png ../img/
-	cp img/*svg ../img/
-	cp -R img/icon_* ../img/
+	cp -vu img/*png ../img/
+	cp -vu img/*svg ../img/
+	cp -vuR img/icon_* ../img/
 	ttree -f ttreerc
