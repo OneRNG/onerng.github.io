@@ -8,9 +8,9 @@ we do not ask you to "trust" us, we give you the ability to verify for yourself 
 what we claim, and that it does nothing else.
 
 <div class="imgbar">
-<a href="img_Board.html"><img src="img/Board-800.png" width="33%"/></a>
-<a href="img_BoardAndTinfoilHat.html"><img src="img/BoardAndTinfoilHat-800.png" width="33%"/></a>
-<a href="img_BoardNoHat.html"><img src="img/BoardNoHat-800.png" width="33%"/></a>
+<a href="img_Board.html"><img src="img/Board-800.png" width="30%"/></a>
+<a href="img_BoardAndTinfoilHat.html"><img src="img/BoardAndTinfoilHat-800.png" width="30%"/></a>
+<a href="img_BoardNoHat.html"><img src="img/BoardNoHat-800.png" width="30%"/></a>
 </div>
 
 [% onerng %] collects entropy from an avalanche diode circuit, and from a channel-hopping RF receiver.
@@ -55,15 +55,25 @@ or reducing the quality of the data.
 </ul>
 </div>
 
-<h4>More Information :</h4>
-<div>
-  <a href="http://moonbaseotago.com/onerng/">Technical Documentation</a> |
-  <a href="openwhat.html">Open What?</a> |
-  The Internals |
-  <a href="random.html">Entropy &amp; Random Numbers</a> |
-  <a href="trust.html">On Trust</a> |
-  What's in a name?
-</div>
+<h3><img src="img/icon_5086/icon_5086.svg" width="24" /> More Information</h3>
+[% FILTER html_para %]
+In response to an approach and initial design brief from Jim Cheetham,
+the New Zealand-based engineering company Moonbase Otago/Paul Campbell
+designed and built the [% onerng %].
+
+Our current plans are to use crowdsourced funding to gear up the necessary
+production infrastructure in order to make these devices cheap and affordable
+for everyone.
+[% END %]
+<ul>
+  <li>Technical Overview</li>
+  <li>Project Roadmap</li>
+  <li><a href="http://moonbaseotago.com/onerng/">Technical Documentation @ Moonbase Otago</a></li>
+  <li><a href="openwhat.html">Open What?</a></li>
+  <li><a href="random.html">Entropy &amp; Random Numbers</a></li>
+  <li><a href="trust.html">On Trust</a></li>
+  <li>What's in a name?</li>
+</ul>
 
 <h3><img src="img/icon_5909/icon_5909.svg" width="24"/> Current State</h3>
 [% FILTER html_para %]
@@ -84,12 +94,33 @@ what features you would like us to consider for future units.
 If you have built your own unit (whether the [% onerng %]
 or any other style of HWRNG) let us know too.
 [% END %]
+<h4>External Reviews, Presentations and Discussions</h4>
+[% FILTER html_para %]
+Let us know about other places where [% onerng %] has been discussed,
+and we'll list them here. Even the bad ones! We will of course point
+out technical inaccuracies, but there's no point in trying to suppress
+information from the Internet ...
+
+<ul>
+<li>DunSec session</li>
+<li>Kiwicon session (if accepted in Nov 10 round)</li>
+<li>LCA2015 session</li>
+<li>Mailing list posts - Bil Cox etc</li>
+<li>Hacker News item, Oct 2014</li>
+<li>Bitcoin chat log?</li>
+<ul>
+
+[% END %]
 
 <h3><img src="img/icon_32014/icon_32014.svg" width="24" /> Team Members</h3>
-<div>The core team at [% onerng %] is currently :-
+<div>The core team at [% onerng %] is based in Dunedin, New Zealand :-
 <ul>
-        <li>Jim Cheetham &mdash; Information Security &mdash; Dunedin, NZ &mdash; <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a></li>
-        <li>Paul Campbell &mdash; Hardware Design &mdash; Dunedin, NZ &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a></li>
+        <li>Jim Cheetham &mdash; Information Security &mdash; <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a><br/>
+        Jim has been in the security field for the last 10 years, and in the unix/network field for over 25 years.<br/>
+        <a href="https://www.linkedin.com/in/jimcheetham">https://www.linkedin.com/in/jimcheetham</a></li>
+        <li>Paul Campbell &mdash; Hardware Design &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a><br/>
+        Paul hasn't said anything pithy about himself yet.<br/>
+        https://www.linkedin.com/no short URL yet either?</li>
 </ul>
 </div>
 
