@@ -67,7 +67,7 @@ for everyone.
 [% END %]
 <ul>
   <li>Technical Overview</li>
-  <li>Project Roadmap</li>
+  <li><a href="roadmap.html">Project Roadmap</a></li>
   <li><a href="http://moonbaseotago.com/onerng/">Technical Documentation @ Moonbase Otago</a></li>
   <li><a href="openwhat.html">Open What?</a></li>
   <li><a href="random.html">Entropy &amp; Random Numbers</a></li>
