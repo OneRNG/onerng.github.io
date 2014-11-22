@@ -77,8 +77,12 @@ for everyone.
 
 <h3><img src="img/icon_5909/icon_5909.svg" width="24"/> Current State</h3>
 [% FILTER html_para %]
-We have a small number of beta units that have been assembled and programmed by Paul in his own lab,
+We made a small number of beta units that have been assembled and programmed by Paul in his own lab,
 and these have been sent out to a few testers for comment.
+
+At the moment we do not have any more beta units;
+however we will soon be launching a Kickstarter project
+in order to make the [% onerng %] much more widely available!
 
 The current beta unit is described in detail over at the
 <a href="http://moonbaseotago.com/onerng/">Moonbase Otago</a> site.
