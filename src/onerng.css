@@ -1,0 +1,105 @@
+/* reset */
+* { margin: 0; padding: 0; }
+
+@font-face { font-family: Asap; src: url(fonts/Asap/Asap-Regular.ttf); }
+@font-face { font-family: 'Roboto Slab'; src: url(fonts/RobotoSlab/RobotoSlab-Regular.ttf); }
+
+body {
+  font-size: 1.3em;
+  background-color: #171717;
+  font-family: 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+}
+
+span.onerng {
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  letter-spacing: -1px;
+  }
+span.onerngbg {
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  letter-spacing: -1px;
+  background-color: #ddffdd;
+  border-radius: 23px;
+  }
+span.citation {
+  vertical-align: super;
+  font-size: 0.7em;
+}
+
+div.page {
+  background-color: white;
+  margin-left: 160px;
+  width: 70%;
+  padding: 2em;
+  -moz-box-shadow: 0 0 5px 5px rgba(255,255,255,0.3);
+  -webkit-box-shadow: 0 0 5px 5px rgba(255,255,255,0.3);
+}
+
+div.header {
+  margin-bottom: 32px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 23px;
+  background-color: #ddffdd;
+}
+
+div.header h1 {
+  color: white;
+  font-size: 3.2em;
+  background-color: #2b7911;
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  padding: 12px;
+  display: inline;
+  border: 2px solid;
+  border-radius: 23px;
+/*  -moz-box-shadow: 0 0 10px rgba(43,121,17,0.8);
+  -webkit-box-shadow: 0 0 10px rgba(43,121,17,0.8); */
+}
+div.header h2 {
+  color: white;
+  padding: 12px;
+  background-color: #2b7911;
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  color: white;
+  /* -moz-box-shadow: 0 0 8px rgba(43,17,121,0.8);
+  -webkit-box-shadow: 0 0 8px rgba(43,17,121,0.8); */
+}
+div.header a { text-decoration: none; color: white; }
+
+h3 {
+  padding: 8px;
+  color: black;
+  background-color: #88bb88;
+  border-radius: 23px;
+  font-family: Asap, 'Roboto Slab',Asap, Georgia, Times New Roman, serif;
+  }
+
+
+pre.code {
+  background-color: #3b3b3b;
+  color: #efefef;
+  padding: 18px 16px 0px;
+  font-family: Lucida Console, Courier New, monospace;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  -moz-box-shadow: 2px 2px 10px rgba(59,59,59,0.8);
+  -webkit-box-shadow: 2px 2px 10px rgba(59,59,59,0.8);
+}
+
+p { line-height: 130%; margin: 8px 0px; }
+
+ul { padding-left: 4px; }
+
+li { margin: 6px 0 6px 16px; }
+
+blockquote { width: 70%; margin-left: 10%; font-style: italic; }
+
+a { text-decoration: none; color: #2b7911; }
+
+a:hover { border-bottom: 2px solid #2b7911; }
+
+div.imgbar a { border: none; }
+
+div.CC img { float: left; }
+
+/* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
+/* The end result might not look much like it, but it was the starting-point ...   */

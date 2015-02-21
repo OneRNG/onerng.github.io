@@ -17,14 +17,46 @@
 <div id="content">
 
 
-<h3>Image Assets</h3>
-<h4>CC2531.png</h4>
-<p>1.8M PNG image data, 828 x 732, 8-bit/color RGB, non-interlaced</p>
+<h3>Verifying your <span class='onerngbg'>OneRNG</span></h3>
 
-<hr/>
-<div class="imgbar">
-<img src="img/CC2531.png"/>
-</div>
+<p>
+
+At the moment, we don't have any detailed instructions,
+because we're waiting for production units to arrive from
+China for us to photograph!
+</p>
+
+<p>
+For now, here's a description of the steps that need to be
+carried out in general :-
+</p>
+
+<p>
+<ul>
+<p>Hardware:</p>
+  <li>Remove the Tin-Foil Hat (ours, not yours)</li>
+  <li>Identify the components</li>
+  <li>Identify the connections, top and bottom</li>
+  <li>Research the one complex component, the CC2531 chip</li>
+  <li>See how much storage it has (256KB or 128KB)
+<p>Software:</p>
+  <li>Plug the device into a machine</li>
+  <li>Dump the firmware into a file</li>
+  <li>Confirm the data is the full 256KB</li>
+  <li>Validate the GPG signature</li>
+  <li>Confirm the data is &lsquo;uncompressible&rsquo;</li>
+  <li>Scripts on your server should do steps 2,3 &amp; 4 on startup</li>
+<p>Result:</p>
+  <li>The hardware you received conforms with the description</li>
+  <li>The firmware that is used matches the source</li>
+  <li>Tampering should be detectable</li>
+</p>
+
+<p>
+</ul>
+</p>
+
+
 
 <div class="footer">
                 <h3><hr/></h3>
@@ -35,6 +67,6 @@
                 </div>
         </div>
         </body>
-<!-- rendered img_CC2531.tt2, last modified at 2014-09-20 14:28:44 NZST -->
+<!-- rendered verifying.tt2, last modified at 2015-02-21 18:46:10 NZDT -->
 </html>
 

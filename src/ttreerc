@@ -5,4 +5,4 @@ accept = \.tt2$
 suffix tt2=html
 verbose
 binmode=:utf8
-depend *=header,footer,spanonerng
+depend *=header,footer

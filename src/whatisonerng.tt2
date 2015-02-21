@@ -1,0 +1,67 @@
+[% PROCESS header %]
+
+<h3>What is [% onerng %]?</h3>
+[% FILTER html_para %]
+[% onerng %] is a small hardware unit
+that generates/collects informational entropy (random numbers)
+and presents it over a USB/Serial connection to your computer.
+
+This allows you to improve the quality and availability
+of random data needed by your computer
+for cryptography, security, research &amp; operational purposes.
+
+[% onerng %] is designed to be <em>verifiable</em>, <em>hackable</em> and affordable.
+
+The primary noise source on [% onerng %] is
+an avalanche diode circuit.
+There is also an RF circuit if you choose to enable it.
+[% END %]
+
+
+<h3>Verifiable</h3>
+[% FILTER html_para %]
+When you receive an [% onerng %] from us, you should
+carefully verify that the unit you have is what you need.
+
+[% onerng %] is designed so that the hardware can be visually inspected,
+so that you can verify the layout and components match the design
+without using specialist equipment
+(a magnifying glass is about all you'll need!)
+
+Next, you should be able to verify that the firmware running the device
+is what we supplied. Our firmware is <em>signed</em>, and other techniques
+are used to make sure you can detect any possible changes.
+
+Additionally, you can control which noise sources are used
+as well as the use of the data whitening feature.
+This flexibility enables you to periodically test the functionality
+of the sources, to confirm the correct operation of the device.
+
+We have more detailed instructions on how to
+<a href="verifying.html">verify your [% onerng %]</a> available.
+[% END %]
+
+
+<h3>Hackable</h3>
+[% FILTER html_para %]
+You should be able to completely control all the technology that you rely on.
+To this end, the entire software, firmware and hardware design
+of [% onerng %]
+is published and licenced Open Hardware and Free Software/Open Source.
+
+If you have the (optional) device programmer, you can replace our firmware
+with one of your own.
+
+You can use our designs to build your own copy of the unit,
+or incorporate some of our solutions into your own designs.
+[% END %]
+
+
+<h3>Technical Details</h3>
+<ul>
+  <li><a href="https://github.com/OneRNG/hardware">Hardware Designs</a> on Github</li>
+  <li><a href="https://github.com/OneRNG/firmware">Firmware</a> on Github</li>
+  <li><a href="http://moonbaseotago.com/onerng/">Technical Documentation @ Moonbase Otago</a></li>
+</ul>
+
+[% INCLUDE footer %]

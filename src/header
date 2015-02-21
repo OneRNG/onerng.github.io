@@ -11,7 +11,7 @@
 <div class="header">
         <h1><span class="onerng"><a href="index.html">OneRNG</a></span></h1>
         <h2><a href="index.html">Open Hardware Random Number Generator</a></h2>
-        <p>The [% onerng %] is a project to create a reliable and open hardware random number generator - one that can be verified by the user and can be trusted.</p>
+        <p>[% onerng %] is a reliable and Open <em>verifiable</em> USB-connected hardware entropy source &amp;&nbsp;random number generator.</p>
         <script type="text/javascript" src="diceimg.js"></script>
 </div>
 <div id="content">
