@@ -26,6 +26,6 @@ var len = dice.length;
 document.write ("<div class='sixd6'>");
 for (var i=0; i<len; ++i) {
         // Construct image filenames from each die face value
-        document.write ("<img src='img/die_face_",(dice[i]),".svg' title='",(dice[i]),"'/>");
+        document.write ("<img src='/img/die_face_",(dice[i]),".svg' title='",(dice[i]),"'/>");
 }
 document.write ("</div>");
