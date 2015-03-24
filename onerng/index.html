@@ -17,18 +17,63 @@
 <div id="content">
 
 
-<h3>Verifying your <span class='onerngbg'>OneRNG</span></h3>
+<h3>Verifying and using your <span class='onerngbg'>OneRNG</span></h3>
 
 <p>
 
-At the moment, we don't have any detailed instructions,
-because we're waiting for production units to arrive from
-China for us to photograph!
+We are working to populate these pages as quickly as possible, so please bear with us!
 </p>
 
 <p>
-For now, here's a description of the steps that need to be
-carried out in general :-
+First, you need to identify which variation of the <span class='onerngbg'>OneRNG</span> you have.
+</p>
+
+<p>
+Currently we have two variations :-
+</p>
+
+<ul>
+<li><a href="#KS">The Kickstarter unit</a></li>
+<li>The original Beta-test units</li>
+</ul>
+
+<h4 id="KS">The Kickstarter <span class='onerngbg'>OneRNG</span></h4>
+<h5>Verify the Hardware</h5>
+<p>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images:</p>
+<ul>
+<li>KS-topview-shielded</li>
+<li>KS-topview-noshield</li>
+<li>KS-botview</li>
+</ul>
+<p>Check the labelling on the single complex component, the CC2531 chip:</p>
+<ul>
+<li>KS-CPU-img</li>
+</ul>
+<p>Compare the unit to the published circuit diagrams:</p>
+<ul>
+<li>KS-layout-top</li>
+<li>KS-layout-bot</li>
+</ul>
+<p>
+
+Plug the <span class='onerngbg'>OneRNG</span> into a USB socket, and confirm that it powers up.
+The LED light should come on and stay brightly lit,
+indicating that the entropy pool is populated and available.
+</p>
+
+<p>
+It is possible that your computer will attempt to probe the <span class='onerngbg'>OneRNG</span>,
+mistaking it for a modem device (for example, if you have an old version
+                                 of the Linux modem-manager package).
+If this happens you might see the LED flicker momentarily.
+</p>
+
+
+<h5>Install the Software</h5>
+<p>
+<p>
+
+For the Beta-test units, reviewers need to do their own homework!
 </p>
 
 <p>
@@ -50,9 +95,6 @@ carried out in general :-
   <li>The hardware you received conforms with the description</li>
   <li>The firmware that is used matches the source</li>
   <li>Tampering should be detectable</li>
-</p>
-
-<p>
 </ul>
 </p>
 
@@ -67,6 +109,6 @@ carried out in general :-
                 </div>
         </div>
         </body>
-<!-- rendered verifying.tt2, last modified at 2015-03-24 20:25:38 NZDT -->
+<!-- rendered onerng/index.tt2, last modified at 2015-03-24 21:00:07 NZDT -->
 </html>
 

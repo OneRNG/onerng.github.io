@@ -1,5 +1,6 @@
 # Relative source and destination filenames
 src = .
+recurse
 dest = ..
 accept = \.tt2$
 suffix tt2=html
