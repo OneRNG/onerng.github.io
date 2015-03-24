@@ -60,7 +60,7 @@ The pre-requisites for these scripts are small :
 <li>Install prerequisites: <code>sudo apt-get install rng-tools at python-gnupg</code></li>
 <li>Download the Debian package</li>
 <li>Install: <code>sudo dpkg -i onerng_1-1_all.deb</code></li>
-<li>Uninstall: <code>sudo dpkg -r onerng</li>
+<li>Uninstall: <code>sudo dpkg -r onerng</code></li>
 </ul>
 
 <h5>RedHat package</h5>
@@ -68,7 +68,7 @@ The pre-requisites for these scripts are small :
 <li>Install prerequisites: <code>sudo yum install rng-tools at python-gnupg</code></li>
 <li>Download the RedHat package</li>
 <li>Install: <code>sudo rpm -i onerng-1-1.noarch.rpm</code></li>
-<li>Uninstall: <code>sudo rpm -e onerng</li>
+<li>Uninstall: <code>sudo rpm -e onerng</code></li>
 </ul>
 
 <h5>Tarball</h5>
@@ -81,7 +81,7 @@ cd onerng_1
 sudo make install
 sudo udevadmin control --reload-rules
 </pre>
-<li>Uninstall: <code>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</li>
+<li>Uninstall: <code>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</code></li>
 </ul>
 
 <h3><hr/></h3>
