@@ -1,0 +1,72 @@
+[% PROCESS header %]
+
+<h3>Verifying and using your [% onerng %]</h3>
+
+[% FILTER html_para %]
+We are working to populate these pages as quickly as possible, so please bear with us!
+
+First, you need to identify which variation of the [% onerng %] you have.
+
+Currently we have two variations :-
+[% END %]
+<ul>
+<li><a href="#KS">The Kickstarter unit</a></li>
+<li>The original Beta-test units</li>
+</ul>
+
+<h4 id="KS">The Kickstarter [% onerng %]</h4>
+<h5>Verify the Hardware</h5>
+<p>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images:</p>
+<ul>
+<li>KS-topview-shielded</li>
+<li>KS-topview-noshield</li>
+<li>KS-botview</li>
+</ul>
+<p>Check the labelling on the single complex component, the CC2531 chip:</p>
+<ul>
+<li>KS-CPU-img</li>
+</ul>
+<p>Compare the unit to the published circuit diagrams:</p>
+<ul>
+<li>KS-layout-top</li>
+<li>KS-layout-bot</li>
+</ul>
+[% FILTER html_para %]
+Plug the [% onerng %] into a USB socket, and confirm that it powers up.
+The LED light should come on and stay brightly lit,
+indicating that the entropy pool is populated and available.
+
+It is possible that your computer will attempt to probe the [% onerng %],
+mistaking it for a modem device (for example, if you have an old version
+                                 of the Linux modem-manager package).
+If this happens you might see the LED flicker momentarily.
+[% END %]
+
+<h5>Install the Software</h5>
+<p>
+[% FILTER html_para %]
+For the Beta-test units, reviewers need to do their own homework!
+
+<ul>
+<p>Hardware:</p>
+  <li>Remove the Tin-Foil Hat (ours, not yours)</li>
+  <li>Identify the components</li>
+  <li>Identify the connections, top and bottom</li>
+  <li>Research the one complex component, the CC2531 chip</li>
+  <li>See how much storage it has (256KB or 128KB)
+<p>Software:</p>
+  <li>Plug the device into a machine</li>
+  <li>Dump the firmware into a file</li>
+  <li>Confirm the data is the full 256KB</li>
+  <li>Validate the GPG signature</li>
+  <li>Confirm the data is &lsquo;uncompressible&rsquo;</li>
+  <li>Scripts on your server should do steps 2,3 &amp; 4 on startup</li>
+<p>Result:</p>
+  <li>The hardware you received conforms with the description</li>
+  <li>The firmware that is used matches the source</li>
+  <li>Tampering should be detectable</li>
+</ul>
+[% END %]
+
+
+[% INCLUDE footer %]
