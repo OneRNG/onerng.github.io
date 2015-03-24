@@ -14,8 +14,8 @@ Currently we have two variations :-
 <li>The original Beta-test units</li>
 </ul>
 
-<h4 id="KS">The Kickstarter [% onerng %]</h4>
-<h5>Verify the Hardware</h5>
+<h3 id="KS">The Kickstarter [% onerng %]</h3>
+<h4>Verify the Hardware</h4>
 <p>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images:</p>
 <ul>
 <li>KS-topview-shielded</li>
@@ -40,10 +40,55 @@ It is possible that your computer will attempt to probe the [% onerng %],
 mistaking it for a modem device (for example, if you have an old version
                                  of the Linux modem-manager package).
 If this happens you might see the LED flicker momentarily.
+
+Remove the [% onerng %] from your system before proceeding to the Software steps.
 [% END %]
 
-<h5>Install the Software</h5>
-<p>
+<h4>Install the Software</h4>
+[% FILTER html_para %]
+We provide an architecture-independent set of scripts to connect your [% onerng %]
+to the <code>rngd</code> daemon present on most Linux distributions.
+
+These scripts check the firmware every time they start communicating with [% onerng %],
+and will refuse to use the unit if the signature checks fail.
+
+The pre-requisites for these scripts are small :
+<code>at</code>, <code>rng-tools</code> and <code>python-gnupg</code>
+[% END %]
+<h5>Debian package</h5>
+<ul>
+<li>Install prerequisites: <code>sudo apt-get install rng-tools at python-gnupg</code></li>
+<li>Download the Debian package</li>
+<li>Install: <code>sudo dpkg -i onerng_1-1_all.deb</code></li>
+<li>Uninstall: <code>sudo dpkg -r onerng</li>
+</ul>
+
+<h5>RedHat package</h5>
+<ul>
+<li>Install prerequisites: <code>sudo yum install rng-tools at python-gnupg</code></li>
+<li>Download the RedHat package</li>
+<li>Install: <code>sudo rpm -i onerng-1-1.noarch.rpm</code></li>
+<li>Uninstall: <code>sudo rpm -e onerng</li>
+</ul>
+
+<h5>Tarball</h5>
+<ul>
+<li>Install prerequisites</li>
+<li>Download the tarball</li>
+<li>Install: <pre>
+tar xzf onerng_1.orig.tar.gz
+cd onerng_1
+sudo make install
+sudo udevadmin control --reload-rules
+</pre>
+<li>Uninstall: <code>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</li>
+</ul>
+
+<h3><hr/></h3>
+
+
+<h3>The Beta-test Unit</h3>
+
 [% FILTER html_para %]
 For the Beta-test units, reviewers need to do their own homework!
 
