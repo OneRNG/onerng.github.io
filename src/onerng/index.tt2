@@ -5,32 +5,87 @@
 [% FILTER html_para %]
 We are working to populate these pages as quickly as possible, so please bear with us!
 
-First, you need to identify which variation of the [% onerng %] you have.
-
-Currently we have two variations :-
 [% END %]
-<ul>
-<li><a href="#KS">The Kickstarter unit</a></li>
-<li>The original Beta-test units</li>
-</ul>
+<h3>Verify the Hardware:</h3>
+<table>
+<tbody>
 
-<h3 id="KS">The Kickstarter [% onerng %]</h3>
-<h4>Verify the Hardware</h4>
-<p>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images:</p>
-<ul>
-<li>KS-topview-shielded</li>
-<li>KS-topview-noshield</li>
-<li>KS-botview</li>
-</ul>
-<p>Check the labelling on the single complex component, the CC2531 chip:</p>
-<ul>
-<li>KS-CPU-img</li>
-</ul>
-<p>Compare the unit to the published circuit diagrams:</p>
-<ul>
-<li>KS-layout-top</li>
-<li>KS-layout-bot</li>
-</ul>
+<tr>
+<td colspan="3">First, you need to identify which variation of the [% onerng %] hardware you have.</td>
+</tr>
+<tr>
+<td>V1.0</td>
+<td>V2.0</td>
+<td>V2.0 Internal</td>
+</tr>
+<tr>
+<td><img src="../img/OneRNG-v1-hw.png" width="30%"/></td>
+<td><img src="../img/OneRNG-v2-hw.png" width="30%"/></td>
+<td><img src="../img/OneRNG-v2int-base-hw.png" width="30%"/></td>
+</tr>
+<tr>
+<td>Built in NZ<br/>(Kickstarter $110 reward)</td>
+<td>Built in China<br/>(Kickstarter $50 reward)</td>
+<td>Built in China<br/>(Kickstarter stretch goal)<br/>(Pictured without connector blocks)</td>
+</tr>
+
+<tr>
+<td colspan="3">Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images:</td>
+</tr>
+<tr>
+<td><ul>
+<li>V1-topview-shielded</li>
+<li>V1-topview-noshield</li>
+<li>V1-botview</li>
+</ul></td>
+<td><ul>
+<li>V2-topview-shielded</li>
+<li>V2-topview-noshield</li>
+<li>V2-botview</li>
+</ul></td>
+<td><ul>
+<li>V2int-topview-shielded</li>
+<li>V2int-topview-noshield</li>
+<li>V2int-botview</li>
+</ul></td>
+</tr>
+
+<tr>
+<td colspan="3">Check the labelling on the single complex component, the CC2531 chip:</td>
+</tr>
+<tr>
+<td><ul>
+<li>V1-CPU</li>
+</ul></td>
+<td><ul>
+<li>V2-CPU</li>
+</ul></td>
+<td><ul>
+<li>V2int-CPU</li>
+</ul></td>
+</tr>
+
+<tr>
+<td colspan="3">Compare the unit to the published circuit diagrams:</td>
+</tr>
+<tr>
+<td><ul>
+<li>V1-layout-top</li>
+<li>V1-layout-bot</li>
+</ul></td>
+<td><ul>
+<li>V2-layout-top</li>
+<li>V2-layout-bot</li>
+</ul></td>
+<td><ul>
+<li>V2int-layout-top</li>
+<li>V2int-layout-bot</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Test the Hardware:</h3>
 [% FILTER html_para %]
 Plug the [% onerng %] into a USB socket, and confirm that it powers up.
 The LED light should come on and stay brightly lit,
@@ -44,18 +99,24 @@ If this happens you might see the LED flicker momentarily.
 Remove the [% onerng %] from your system before proceeding to the Software steps.
 [% END %]
 
-<h4>Install the Software</h4>
+<h3>Install the Host Software</h3>
 [% FILTER html_para %]
+Both the V1.0 and V2.0 units being shipped currently come with the V3.0 signed firmware.
+These are intended to be used with the V1.1 Host Software.
+(Beta-test users have the V1.0 hardware, but unsigned V0.0, V1.0 or V2.0 firmware, and
+therefore have to be careful with their Host Software verification settings)
+
 We provide an architecture-independent set of scripts to connect your [% onerng %]
 to the <code>rngd</code> daemon present on most Linux distributions.
+
+The pre-requisites for these scripts are small :
+<code>at</code>, <code>rng-tools</code> and <code>python-gnupg</code>
 
 These scripts check the firmware every time they start communicating with [% onerng %],
 and will refuse to use the unit if the signature checks fail.
 
-The pre-requisites for these scripts are small :
-<code>at</code>, <code>rng-tools</code> and <code>python-gnupg</code>
 [% END %]
-<h5>Debian package</h5>
+<h4>Debian package</h4>
 <ul>
 <li>Install prerequisites: <code>sudo apt-get install rng-tools at python-gnupg</code></li>
 <li>Download the Debian package</li>
@@ -63,7 +124,7 @@ The pre-requisites for these scripts are small :
 <li>Uninstall: <code>sudo dpkg -r onerng</code></li>
 </ul>
 
-<h5>RedHat package</h5>
+<h4>RedHat package</h4>
 <ul>
 <li>Install prerequisites: <code>sudo yum install rng-tools at python-gnupg</code></li>
 <li>Download the RedHat package</li>
@@ -71,7 +132,7 @@ The pre-requisites for these scripts are small :
 <li>Uninstall: <code>sudo rpm -e onerng</code></li>
 </ul>
 
-<h5>Tarball</h5>
+<h4>Tarball</h4>
 <ul>
 <li>Install prerequisites</li>
 <li>Download the tarball</li>
@@ -83,35 +144,5 @@ sudo udevadmin control --reload-rules
 </pre>
 <li>Uninstall: <code>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</code></li>
 </ul>
-
-<h3><hr/></h3>
-
-
-<h3>The Beta-test Unit</h3>
-
-[% FILTER html_para %]
-For the Beta-test units, reviewers need to do their own homework!
-
-<ul>
-<p>Hardware:</p>
-  <li>Remove the Tin-Foil Hat (ours, not yours)</li>
-  <li>Identify the components</li>
-  <li>Identify the connections, top and bottom</li>
-  <li>Research the one complex component, the CC2531 chip</li>
-  <li>See how much storage it has (256KB or 128KB)
-<p>Software:</p>
-  <li>Plug the device into a machine</li>
-  <li>Dump the firmware into a file</li>
-  <li>Confirm the data is the full 256KB</li>
-  <li>Validate the GPG signature</li>
-  <li>Confirm the data is &lsquo;uncompressible&rsquo;</li>
-  <li>Scripts on your server should do steps 2,3 &amp; 4 on startup</li>
-<p>Result:</p>
-  <li>The hardware you received conforms with the description</li>
-  <li>The firmware that is used matches the source</li>
-  <li>Tampering should be detectable</li>
-</ul>
-[% END %]
-
 
 [% INCLUDE footer %]
