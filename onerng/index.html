@@ -23,7 +23,7 @@
 
 We are working to populate these pages as quickly as possible, so please bear with us!</p>
 
-<h3>Verify the Hardware:</h3>
+<h3>Verify the Hardware</h3>
 <table>
 <tbody>
 
@@ -34,16 +34,19 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <td>V1.0</td>
 <td>V2.0</td>
 <td>V2.0 Internal</td>
+<td>Programmer</td>
 </tr>
 <tr>
-<td><img src="../img/OneRNG-v1-hw.png" width="30%"/></td>
-<td><img src="../img/OneRNG-v2-hw.png" width="30%"/></td>
-<td><img src="../img/OneRNG-v2int-base-hw.png" width="30%"/></td>
+<td><img src="../img/OneRNG-v1-hw.png" width="25%"/></td>
+<td><img src="../img/OneRNG-v2-hw.png" width="25%"/></td>
+<td><img src="../img/OneRNG-v2int-base-hw.png" width="25%"/></td>
+<td>(OneRNG Programmer)</td>
 </tr>
 <tr>
 <td>Built in NZ<br/>(Kickstarter $110 reward)</td>
 <td>Built in China<br/>(Kickstarter $50 reward)</td>
 <td>Built in China<br/>(Kickstarter stretch goal)<br/>(Pictured without connector blocks)</td>
+<td>Built in NZ<br/>(Kickstarter $90 reward)</td>
 </tr>
 
 <tr>
@@ -65,6 +68,10 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <li>V2int-topview-noshield</li>
 <li>V2int-botview</li>
 </ul></td>
+<td><ul>
+<li>PRG-topview</li>
+<li>PRG-botview</li>
+</ul></td>
 </tr>
 
 <tr>
@@ -79,6 +86,10 @@ We are working to populate these pages as quickly as possible, so please bear wi
 </ul></td>
 <td><ul>
 <li>V2int-CPU</li>
+</ul></td>
+<td><ul>
+(The Programmer uses an AT90USB162 chip)<br/>
+<li>PRG-CUP</li>
 </ul></td>
 </tr>
 
@@ -98,11 +109,15 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <li>V2int-layout-top</li>
 <li>V2int-layout-bot</li>
 </ul></td>
+<td><ul>
+<li>PRG-layout-top</li>
+<li>PRG-layout-bot</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
 
-<h3>Test the Hardware:</h3>
+<h3>Test the Hardware</h3>
 <p>
 
 Plug the <span class='onerngbg'>OneRNG</span> into a USB socket, and confirm that it powers up.
@@ -119,6 +134,11 @@ If this happens you might see the LED flicker momentarily.
 
 <p>
 Remove the <span class='onerngbg'>OneRNG</span> from your system before proceeding to the Software steps.
+</p>
+
+<p>
+We appreciate that these steps might be inconvenient for the V2.0 Internal hardware
+version, but strict verification is very important for all users of <span class='onerngbg'>OneRNG</span>.
 </p>
 
 
@@ -149,6 +169,7 @@ and will refuse to use the unit if the signature checks fail.</p>
 <ul>
 <li>Install prerequisites: <code>sudo apt-get install rng-tools at python-gnupg</code></li>
 <li>Download the Debian package</li>
+<li>Verify the package checksum</li>
 <li>Install: <code>sudo dpkg -i onerng_1-1_all.deb</code></li>
 <li>Uninstall: <code>sudo dpkg -r onerng</code></li>
 </ul>
@@ -157,6 +178,7 @@ and will refuse to use the unit if the signature checks fail.</p>
 <ul>
 <li>Install prerequisites: <code>sudo yum install rng-tools at python-gnupg</code></li>
 <li>Download the RedHat package</li>
+<li>Verify the package checksum</li>
 <li>Install: <code>sudo rpm -i onerng-1-1.noarch.rpm</code></li>
 <li>Uninstall: <code>sudo rpm -e onerng</code></li>
 </ul>
@@ -165,6 +187,7 @@ and will refuse to use the unit if the signature checks fail.</p>
 <ul>
 <li>Install prerequisites</li>
 <li>Download the tarball</li>
+<li>Verify the tarball checksum</li>
 <li>Install: <pre>
 tar xzf onerng_1.orig.tar.gz
 cd onerng_1
@@ -173,6 +196,34 @@ sudo udevadmin control --reload-rules
 </pre>
 <li>Uninstall: <code>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</code></li>
 </ul>
+
+<h3>Test <span class='onerngbg'>OneRNG</span> Operation</h3>
+<p>
+
+Once the Host Software has been installed, insert your <span class='onerngbg'>OneRNG</span>. Test the correct operation of the hardware
+and software combined by demanding large quantities of data from <code>/dev/random</code>.
+</p>
+
+<p>
+<code>cat /dev/random >/dev/null</code>
+</p>
+
+<p>
+If <span class='onerngbg'>OneRNG</span> is working correctly, you should see the LED light dim as the onboard entropy pool is rapidly depleted.
+</p>
+
+<p>
+When you interrupt the <code>cat</code> command (by pressing control-C) the LED should return to normal brightness.
+</p>
+
+
+<h3>Support for <span class='onerngbg'>OneRNG</span></h3>
+<p>
+
+Please join the <a href="http://lists.onerng.info/groups/onerng-talk/"><span class='onerngbg'>OneRNG</span> Discussion Group</a> for support queries,
+or contact members of <a href="/team.html">the <span class='onerngbg'>OneRNG</span> team</a> directly.
+</p>
+
 
 <div class="footer">
                 <h3><hr/></h3>
@@ -183,6 +234,6 @@ sudo udevadmin control --reload-rules
                 </div>
         </div>
         </body>
-<!-- rendered onerng/index.tt2, last modified at 2015-03-25 21:48:56 NZDT -->
+<!-- rendered onerng/index.tt2, last modified at 2015-03-25 22:14:04 NZDT -->
 </html>
 
