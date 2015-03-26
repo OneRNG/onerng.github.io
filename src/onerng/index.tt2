@@ -20,9 +20,9 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <td>Programmer</td>
 </tr>
 <tr>
-<td><img src="../img/OneRNG-v1-hw.png" width="25%"/></td>
-<td><img src="../img/OneRNG-v2-hw.png" width="25%"/></td>
-<td><img src="../img/OneRNG-v2int-base-hw.png" width="25%"/></td>
+<td><img src="../pic/V1-topview-shielded.png" width="300"/></td>
+<td><img src="../pic/V2-topview-shielded.png" width="300"/></td>
+<td><img src="../pic/V2int-topview-shielded.png" width="300"/></td>
 <td>(OneRNG Programmer)</td>
 </tr>
 <tr>
@@ -37,17 +37,15 @@ We are working to populate these pages as quickly as possible, so please bear wi
 </tr>
 <tr>
 <td><ul>
-<li>V1-topview-shielded</li>
-<li>V1-topview-noshield</li>
-<li>V1-botview</li>
+<li><img src="../pic/V1-topview-noshield.png" width="300"/></li>
+<li><img src="../pic/V1-botview.png" width="300"/></li>
 </ul></td>
 <td><ul>
-<li>V2-topview-shielded</li>
-<li>V2-topview-noshield</li>
-<li>V2-botview</li>
+<li><img src="../pic/V2-topview-noshield.png" width="300"/></li>
+<li><img src="../pic/V2-botview-sticker.png" width="300"/><br/>Note that there should be a sticker over the programming port (we don't guarantee the color, size of shape of the sticker!)</li>
+<li><img src="../pic/V2-botview.png" width="300"/></li>
 </ul></td>
 <td><ul>
-<li>V2int-topview-shielded</li>
 <li>V2int-topview-noshield</li>
 <li>V2int-botview</li>
 </ul></td>
@@ -62,17 +60,17 @@ We are working to populate these pages as quickly as possible, so please bear wi
 </tr>
 <tr>
 <td><ul>
-<li>V1-CPU</li>
+<li><img src="../pic/V1-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 093<br/>PLN1 <u>G4</u></li>
 </ul></td>
 <td><ul>
-<li>V2-CPU</li>
+<li><img src="../pic/V2-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 3BJ<br/>P2N5 <u>G4</u></li>
 </ul></td>
 <td><ul>
-<li>V2int-CPU</li>
+<li><img src="../pic/V2-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 3BJ<br/>P2N5 <u>G4</u></li>
 </ul></td>
 <td><ul>
 (The Programmer uses an AT90USB162 chip)<br/>
-<li>PRG-CUP</li>
+<li>PRG-CPU</li>
 </ul></td>
 </tr>
 
@@ -81,8 +79,8 @@ We are working to populate these pages as quickly as possible, so please bear wi
 </tr>
 <tr>
 <td><ul>
-<li>V1-layout-top</li>
-<li>V1-layout-bot</li>
+<li><img src="../pic/V1-layout-top.png" width="300"/></li>
+<li><img src="../pic/V1-layout-bot.png" width="300"/></li>
 </ul></td>
 <td><ul>
 <li>V2-layout-top</li>
@@ -120,7 +118,7 @@ version, but strict verification is very important for all users of [% onerng %]
 <h3>Install the Host Software</h3>
 [% FILTER html_para %]
 Both the V1.0 and V2.0 units being shipped currently come with the V3.0 signed firmware.
-These are intended to be used with the V1.1 Host Software.
+These are intended to be used with the V3.1 Host Software.
 (Beta-test users have the V1.0 hardware, but unsigned V0.0, V1.0 or V2.0 firmware, and
 therefore have to be careful with their Host Software verification settings)
 
@@ -137,28 +135,34 @@ and will refuse to use the unit if the signature checks fail.
 <h4>Debian package</h4>
 <ul>
 <li>Install prerequisites: <code>sudo apt-get install rng-tools at python-gnupg</code></li>
-<li>Download the Debian package</li>
-<li>Verify the package checksum</li>
-<li>Install: <code>sudo dpkg -i onerng_1-1_all.deb</code></li>
+<li><a href="/sw/onerng_3-1_all.deb">Download the Debian package</a> (8.1KB)</li>
+<li>Verify the package checksum<br/>
+<code>SHA256: 5a654ae1f14ad9c80ee0a2ff6b2caed4d22af027a5a45d8b1436a1d2c9e9da51</code><br/>
+<code>MD5: 048c5ae7d26d0a7bedc7282d481e0938</code></li>
+<li>Install: <code>sudo dpkg -i onerng_3-1_all.deb</code></li>
 <li>Uninstall: <code>sudo dpkg -r onerng</code></li>
 </ul>
 
 <h4>RedHat package</h4>
 <ul>
 <li>Install prerequisites: <code>sudo yum install rng-tools at python-gnupg</code></li>
-<li>Download the RedHat package</li>
-<li>Verify the package checksum</li>
-<li>Install: <code>sudo rpm -i onerng-1-1.noarch.rpm</code></li>
+<li><a href="/sw/onerng_3-1.fc20.noarch.rpm">Download the RedHat package</a> (8.6KB)</li>
+<li>Verify the package checksum<br/>
+<code>SHA256: 47f72fdd6f030d7e9016d04fcca2d791b6bea80c584b62056d47cff223ba2a06</code><br/>
+<code>MD5: d71f551416f4dafb69bfeb7ce5fd9821</code></li>
+<li>Install: <code>sudo rpm -i onerng-3-1.noarch.rpm</code></li>
 <li>Uninstall: <code>sudo rpm -e onerng</code></li>
 </ul>
 
 <h4>Tarball</h4>
 <ul>
 <li>Install prerequisites</li>
-<li>Download the tarball</li>
-<li>Verify the tarball checksum</li>
+<li><a href="/sw/onerng_3.orig.tar.gz">Download the tarball</a> (100KB)</li>
+<li>Verify the tarball checksum<br/>
+<code>SHA256: f649cf5063c77e0af04dbd7474975eafb72af1ff147fb3c732bf019fe466b28a</code><br/>
+<code>MD5: 03ba63bc2dd9ab8b822ff96e7178b734</code></li>
 <li>Install: <pre>
-tar xzf onerng_1.orig.tar.gz
+tar xzf onerng_3.orig.tar.gz
 cd onerng_1
 sudo make install
 sudo udevadmin control --reload-rules

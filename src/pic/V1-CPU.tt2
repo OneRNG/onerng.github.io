@@ -1,0 +1,12 @@
+[% PROCESS header %]
+
+<h3>Image Assets</h3>
+<h4>V1-CPU.png</h4>
+<p>1.8M  PNG image data, 828 x 732, 8-bit/color RGB, non-interlaced</p>
+
+<hr/>
+<div class="imgbar">
+<img src="/pic/V1-CPU.png"/>
+</div>
+
+[% INCLUDE footer %]

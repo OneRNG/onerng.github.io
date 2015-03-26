@@ -1,9 +1,9 @@
 [% PROCESS header %]
 
 <div class="imgbar">
-<a href="img_Board.html"><img src="img/Board-800.png" width="30%" title="OneRNG"/></a>
-<a href="img_BoardAndTinfoilHat.html"><img src="img/BoardAndTinfoilHat-800.png" width="30%" title="OneRNG with case detached"/></a>
-<a href="img_BoardNoHat.html"><img src="img/BoardNoHat-800.png" width="30%" title="OneRNG with case removed"/></a>
+<a href="pic/V2-topview-shielded.html"><img src="pic/V2-topview-shielded.png" width="30%" title="OneRNG"/></a>
+<a href="pic/V2-topview-withshield.html"><img src="pic/V2-topview-withshield.png" width="30%" title="OneRNG with shield detached"/></a>
+<a href="pic/V2-topview-noshield.html"><img src="pic/V2-topview-noshield.png" width="30%" title="OneRNG with shield removed"/></a>
 </div>
 
 <h3>OneRNG</h3>

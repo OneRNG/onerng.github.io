@@ -1,0 +1,12 @@
+[% PROCESS header %]
+
+<h3>Image Assets</h3>
+<h4>V2-botview-sticker.png</h4>
+<p>2.1M  PNG image data, 2000 x 900, 8-bit/color RGBA, non-interlaced</p>
+
+<hr/>
+<div class="imgbar">
+<img src="/pic/V2-botview-sticker.png"/>
+</div>
+
+[% INCLUDE footer %]

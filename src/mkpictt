@@ -1,0 +1,24 @@
+#!/bin/bash
+
+for i in pic/*png
+do
+    img=$(file $i | cut -d: -f2)
+    size=$(ls -lh $i | cut -d' ' -f5)
+    t=${i/.png/.tt2}
+
+    cat >$t <<EOF
+[% PROCESS header %]
+
+<h3>Image Assets</h3>
+<h4>$(basename $i)</h4>
+<p>$size $img</p>
+
+<hr/>
+<div class="imgbar">
+<img src="/$i"/>
+</div>
+
+[% INCLUDE footer %]
+EOF
+done
+
