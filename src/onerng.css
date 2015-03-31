@@ -106,6 +106,7 @@ div.imgbar a { border: none; }
 
 div.CC img { float: left; }
 
+table.versions { width: 100%; }
 
 /* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
 /* The end result might not look much like it, but it was the starting-point ...   */
