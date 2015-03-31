@@ -1,0 +1,12 @@
+[% PROCESS header %]
+
+<h3>Image Assets</h3>
+<h4>PRG-V9-s1.png</h4>
+<p>161K  PNG image data, 873 x 888, 8-bit/color RGBA, non-interlaced</p>
+
+<hr/>
+<div class="imgbar">
+<img src="/pic/PRG-V9-s1.png"/>
+</div>
+
+[% INCLUDE footer %]
