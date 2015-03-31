@@ -1,10 +1,11 @@
 #!/bin/bash
 
-for i in pic/*png
+for i in pic/*png pic/*jpg
 do
     img=$(file $i | cut -d: -f2)
     size=$(ls -lh $i | cut -d' ' -f5)
     t=${i/.png/.tt2}
+    t=${t/.jpg/.tt2}
 
     cat >$t <<EOF
 [% PROCESS header %]

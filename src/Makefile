@@ -6,6 +6,7 @@ all:
 	mkdir -p ../pic
 	rm -f ../pic/*
 	cp -vu pic/*png ../pic/
+	cp -vu pic/*jpg ../pic/
 	mkdir -p ../sw
 	rm -f ../sw/*
 	cp -vu sw/* ../sw/

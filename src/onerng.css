@@ -41,6 +41,11 @@ div.header {
   border-radius: 23px;
   background-color: #ddffdd;
 }
+div.footer {
+  font-size: 0.7em;
+  background-color: #ddffdd;
+  border-radius: 10px;
+}
 
 div.header h1 {
   color: white;
@@ -100,6 +105,7 @@ a:hover { border-bottom: 2px solid #2b7911; }
 div.imgbar a { border: none; }
 
 div.CC img { float: left; }
+
 
 /* Thanks to http://auxesis.github.io/cucumber-nagios/ for stylesheet inspiration! */
 /* The end result might not look much like it, but it was the starting-point ...   */

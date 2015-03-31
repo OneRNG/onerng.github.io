@@ -44,7 +44,8 @@ This should be online by April 2015.
   <li><a href="whatisonerng.html">What is [% onerng %]?</a> &mdash; Technical details</li>
 <!-- Coming soon  <li><a href="whyonerng.html">What is [% onerng %] for?</a> &mdash; Using Entropy and Random Numbers</li> -->
   <li>Where can I get a [% onerng %] from? &mdash; Moonbase Otago eshop coming soon (mid 2015)</li>
-  <li>I have an [% onerng %] &mdash; How can I <a href="verifying.html">verify</a> my unit?</li>
+  <li>I have a [% onerng %] &mdash; How can I <a href="/onerng/">verify and use</a> my unit?</li>
+  <li>I have a [% onerng %] programmer &mdash; How can I <a href="/programmer/">verify and use</a> my unit?</li>
   <li><a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> &mdash; Email/Forum</li>
   <li><a href="presentations.html">Presentations &amp; Reviews</a></li>
   <li><a href="team.html">Who runs the [% onerng %] project?</a></li>

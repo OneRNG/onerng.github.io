@@ -24,81 +24,49 @@
 We are working to populate these pages as quickly as possible, so please bear with us!</p>
 
 <h3>Verify the Hardware</h3>
-<table>
+<ul>
+<li>First, you need to identify which variation of the <span class='onerngbg'>OneRNG</span> hardware you have</li>
+<li>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images<br/>
+ Note that there should be a sticker over the programming port of the V2 boards (we don't guarantee the color, size of shape of the sticker!)</li>
+<li>Check the labelling on the single complex component, the CC2531 chip. The first two lines are important; the product name and data size. The other two lines are manufacturing batch numbers, and we are not tracking those for verification purposes</li>
+<li>Compare the unit to the published circuit diagrams</li>
+</ul>
+
+<table class="versions">
 <tbody>
-
+<tr><th>Version</hh><th>Picture</th><th>Visual Inspection</th><th>CPU</th><th>Diagrams</th></tr>
+<tr><td colspan="5"><h3><hr/></h3></td></tr>
 <tr>
-<td colspan="3">First, you need to identify which variation of the <span class='onerngbg'>OneRNG</span> hardware you have.</td>
+<td>V1.0<br/>Built in NZ<br/>(Kickstarter $110 reward)</th>
+<td><a href="/pic/V1-topview-shielded.html"><img src="/pic/V1-topview-shielded.png" width="200"/></a></td>
+<td><a href="/pic/V1-topview-noshield.html"><img src="/pic/V1-topview-noshield.png" width="200"/></a>
+    <br/><a href="/pic/V1-botview.html"><img src="/pic/V1-botview.png" width="200"/></a></td>
+<td><a href="/pic/V1-CPU.html"><img src="/pic/V1-CPU.png" width="200"/></a>
+    <br/>CC2531<br/>F256</td>
+<td><a href="/pic/V1-layout-top.html"><img src="/pic/V1-layout-top.png" width="200"/></a>
+    <br/><a href="/pic/V1-layout-bot.html"><img src="/pic/V1-layout-bot.png" width="200"/></a></td>
 </tr>
+<tr><td colspan="5"><h3><hr/></h3></td></tr>
 <tr>
-<td>V1.0</td>
-<td>V2.0</td>
-<td>V2.0 Internal</td>
-</tr>
+<td>V2.0<br/>Built in China<br/>(Kickstarter $50 reward)</td>
+<td><a href="/pic/V2-topview-shielded.html"><img src="/pic/V2-topview-shielded.png" width="200"/></a></td>
+<td><a href="/pic/V2-topview-noshield.html"><img src="/pic/V2-topview-noshield.png" width="200"/></a>
+    <br/><a href="/pic/V2-botview-sticker.html"><img src="/pic/V2-botview-sticker.png" width="200"/></a>
+    <br/><a href="/pic/V2-botview.html"><img src="/pic/V2-botview.png" width="200"/></a></td>
+<td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
+    <br/>CC2531<br/>F256</td>
+<tr><td colspan="5"><h3><hr/></h3></td></tr>
 <tr>
-<td><img src="../pic/V1-topview-shielded.png" width="300"/></td>
-<td><img src="../pic/V2-topview-shielded.png" width="300"/></td>
-<td><img src="../pic/V2int-topview-shielded.png" width="300"/></td>
-</tr>
-<tr>
-<td>Built in NZ<br/>(Kickstarter $110 reward)</td>
-<td>Built in China<br/>(Kickstarter $50 reward)</td>
-<td>Built in China<br/>(Kickstarter stretch goal)<br/>(Pictured without connector blocks)</td>
-</tr>
-
-<tr>
-<td colspan="3">Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images:</td>
-</tr>
-<tr>
-<td><ul>
-<li><img src="../pic/V1-topview-noshield.png" width="300"/></li>
-<li><img src="../pic/V1-botview.png" width="300"/></li>
-</ul></td>
-<td><ul>
-<li><img src="../pic/V2-topview-noshield.png" width="300"/></li>
-<li><img src="../pic/V2-botview-sticker.png" width="300"/><br/>Note that there should be a sticker over the programming port (we don't guarantee the color, size of shape of the sticker!)</li>
-<li><img src="../pic/V2-botview.png" width="300"/></li>
-</ul></td>
-<td><ul>
-<li>V2int-topview-noshield</li>
-<li>V2int-botview</li>
-</ul></td>
-</tr>
-
-<tr>
-<td colspan="3">Check the labelling on the single complex component, the CC2531 chip:</td>
-</tr>
-<tr>
-<td><ul>
-<li><img src="../pic/V1-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 093<br/>PLN1 <u>G4</u></li>
-</ul></td>
-<td><ul>
-<li><img src="../pic/V2-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 3BJ<br/>P2N5 <u>G4</u></li>
-</ul></td>
-<td><ul>
-<li><img src="../pic/V2-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 3BJ<br/>P2N5 <u>G4</u></li>
-</ul></td>
-</tr>
-
-<tr>
-<td colspan="3">Compare the unit to the published circuit diagrams:</td>
-</tr>
-<tr>
-<td><ul>
-<li><img src="../pic/V1-layout-top.png" width="300"/></li>
-<li><img src="../pic/V1-layout-bot.png" width="300"/></li>
-</ul></td>
-<td><ul>
-<li>V2-layout-top</li>
-<li>V2-layout-bot</li>
-</ul></td>
-<td><ul>
-<li>V2int-layout-top</li>
-<li>V2int-layout-bot</li>
-</ul></td>
+<td>V2.0 internal<br/>Built in China<br/>(Kickstarter stretch reward)</td>
+<td><a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.png" width="200"/></a></td>
+<td><!--<a href="/pic/V2int-topview-noshield.html"><img src="/pic/V2int-topview-noshield.png" width="200"/></a>
+    <br/><a href="/pic/V2int-botview.html"><img src="/pic/V2int-botview.png" width="200"/></a>--></td>
+<td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
+    <br/>CC2531<br/>F256</td>
 </tr>
 </tbody>
 </table>
+
 
 <h3>Test the Hardware</h3>
 <p>
@@ -214,11 +182,12 @@ or contact members of <a href="/team.html">the <span class='onerngbg'>OneRNG</sp
 </p>
 
 
+</div>
 <div class="footer">
                 <h3><hr/></h3>
                 <div class="CC">
-                    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/img/CCBYSA-88x31.png" /></a><br/></p>
-                    <p><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">The OneRNG.info website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://onerng.info/" property="cc:attributionName" rel="cc:attributionURL">Jim Cheetham</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/img/CCBYSA-88x31.png" /></a>
+                    <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">The OneRNG.info website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://onerng.info/" property="cc:attributionName" rel="cc:attributionURL">Jim Cheetham</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
                     <p>Website copyright &copy; 2014,2015 Jim Cheetham, jim@inode.co.nz. Pictures copyright &copy; 2014,2015 Jim Cheetham and/or Paul Campbell. Icons copyright various; see source for details.<br/><a href="https://github.com/OneRNG/onerng.github.io">Website source</a> on <a href="https://github.com/">GitHub</a></p>
                 </div>
         </div>
