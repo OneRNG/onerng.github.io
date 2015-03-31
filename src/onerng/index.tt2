@@ -17,19 +17,16 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <td>V1.0</td>
 <td>V2.0</td>
 <td>V2.0 Internal</td>
-<td>Programmer</td>
 </tr>
 <tr>
 <td><img src="../pic/V1-topview-shielded.png" width="300"/></td>
 <td><img src="../pic/V2-topview-shielded.png" width="300"/></td>
 <td><img src="../pic/V2int-topview-shielded.png" width="300"/></td>
-<td>(OneRNG Programmer)</td>
 </tr>
 <tr>
 <td>Built in NZ<br/>(Kickstarter $110 reward)</td>
 <td>Built in China<br/>(Kickstarter $50 reward)</td>
 <td>Built in China<br/>(Kickstarter stretch goal)<br/>(Pictured without connector blocks)</td>
-<td>Built in NZ<br/>(Kickstarter $90 reward)</td>
 </tr>
 
 <tr>
@@ -49,10 +46,6 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <li>V2int-topview-noshield</li>
 <li>V2int-botview</li>
 </ul></td>
-<td><ul>
-<li>PRG-topview</li>
-<li>PRG-botview</li>
-</ul></td>
 </tr>
 
 <tr>
@@ -67,10 +60,6 @@ We are working to populate these pages as quickly as possible, so please bear wi
 </ul></td>
 <td><ul>
 <li><img src="../pic/V2-CPU.png" width="300"/><br/>CC2531<br/>F256<br/>TI 3BJ<br/>P2N5 <u>G4</u></li>
-</ul></td>
-<td><ul>
-(The Programmer uses an AT90USB162 chip)<br/>
-<li>PRG-CPU</li>
 </ul></td>
 </tr>
 
@@ -89,10 +78,6 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <td><ul>
 <li>V2int-layout-top</li>
 <li>V2int-layout-bot</li>
-</ul></td>
-<td><ul>
-<li>PRG-layout-top</li>
-<li>PRG-layout-bot</li>
 </ul></td>
 </tr>
 </tbody>
