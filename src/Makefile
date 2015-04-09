@@ -5,6 +5,7 @@ all:
 	cp -vu img/*svg ../img/
 	mkdir -p ../pic
 	rm -f ../pic/*
+	./mkpictt
 	cp -vu pic/*png ../pic/
 	cp -vu pic/*jpg ../pic/
 	mkdir -p ../sw

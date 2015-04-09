@@ -10,7 +10,7 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <ul>
 <li>First, you need to identify which variation of the [% onerng %] hardware you have</li>
 <li>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images<br/>
- Note that there should be a sticker over the programming port of the V2 boards (we don't guarantee the color, size of shape of the sticker!)</li>
+ Note that there should be a sticker over the programming port of the boards (we don't guarantee the color, size of shape of the sticker!)</li>
 <li>Check the labelling on the single complex component, the CC2531 chip. The first two lines are important; the product name and data size. The other two lines are manufacturing batch numbers, and we are not tracking those for verification purposes</li>
 <li>Compare the unit to the published circuit diagrams</li>
 </ul>
@@ -23,6 +23,7 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <td>V1.0<br/>Built in NZ<br/>(Kickstarter $110 reward)</th>
 <td><a href="/pic/V1-topview-shielded.html"><img src="/pic/V1-topview-shielded.png" width="200"/></a></td>
 <td><a href="/pic/V1-topview-noshield.html"><img src="/pic/V1-topview-noshield.png" width="200"/></a>
+    <br/><a href="/pic/V1-botview-sticker.html"><img src="/pic/V1-botview-sticker.png" width="200"/></a>
     <br/><a href="/pic/V1-botview.html"><img src="/pic/V1-botview.png" width="200"/></a></td>
 <td><a href="/pic/V1-CPU.html"><img src="/pic/V1-CPU.png" width="200"/></a>
     <br/>CC2531<br/>F256</td>
@@ -34,7 +35,6 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <td>V2.0<br/>Built in China<br/>(Kickstarter $50 reward)</td>
 <td><a href="/pic/V2-topview-shielded.html"><img src="/pic/V2-topview-shielded.png" width="200"/></a></td>
 <td><a href="/pic/V2-topview-noshield.html"><img src="/pic/V2-topview-noshield.png" width="200"/></a>
-    <br/><a href="/pic/V2-botview-sticker.html"><img src="/pic/V2-botview-sticker.png" width="200"/></a>
     <br/><a href="/pic/V2-botview.html"><img src="/pic/V2-botview.png" width="200"/></a></td>
 <td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
     <br/>CC2531<br/>F256</td>
