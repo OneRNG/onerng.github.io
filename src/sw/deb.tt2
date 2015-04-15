@@ -1,4 +1,4 @@
-<li>Download the package <a href='/sw/onerng_3-1.1_all.deb'>onerng_3-1.1_all.deb</a> (8.3K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3-1.1_all.deb?raw=true'>onerng_3-1.1_all.deb</a> (8.3K)</li>
 <li>Verify the package checksum<br/>
 <pre>SHA256: b77895573dc7cd1cd2e1a0024f27723a27b4aca8fd172d9922d279e6c69d7ba2
    MD5: b899a0fe967dda27911a5b2503216eed</pre></li>

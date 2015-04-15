@@ -9,7 +9,7 @@ do
     # Redirect stdout to match the value of $i
     exec 1>$i.tt2
     latest=$(ls *$i | sort | head -1)
-    printf "<li>Download the package <a href='/sw/$latest'>$latest</a> ($(ls -lh $latest | cut -d' ' -f5))</li>\n"
+    printf "<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/${latest}?raw=true'>$latest</a> ($(ls -lh $latest | cut -d' ' -f5))</li>\n"
     printf "<li>Verify the package checksum<br/>\n"
     printf "<pre>SHA256: $(sha256sum $latest|cut -d' ' -f1)\n"
     printf "   MD5: $(md5sum    $latest|cut -d' ' -f1)</pre></li>\n"
@@ -21,4 +21,5 @@ do
     esac
     printf "$latest"
 done
-
+# Hint to ttree that the parent HTML of these snippets needs to be regenerated
+touch ../onerng/index.tt2
