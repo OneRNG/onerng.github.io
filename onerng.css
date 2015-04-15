@@ -79,10 +79,10 @@ h3 {
   }
 
 
-pre.code {
+div.install pre {
   background-color: #3b3b3b;
-  color: #efefef;
-  padding: 18px 16px 0px;
+  color: #11ee33;
+  padding: 2px 16px 0px;
   font-family: Lucida Console, Courier New, monospace;
   letter-spacing: 1px;
   font-size: 0.8em;

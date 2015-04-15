@@ -10,7 +10,8 @@ all:
 	cp -vu pic/*jpg ../pic/
 	mkdir -p ../sw
 	rm -f ../sw/*
-	cp -vu sw/* ../sw/
+	./mkswtt
+	cp -vu sw/*deb sw/*rpm sw/*gz sw/*brd sw/*sch ../sw/
 	mkdir -p ../fonts
 	rm -rf ../fonts/*
 	cp -R fonts ..

@@ -37,8 +37,8 @@ as well as the use of the data whitening feature.
 This flexibility enables you to periodically test the functionality
 of the sources, to confirm the correct operation of the device.
 
-We have more detailed instructions on how to
-<a href="verifying.html">verify your [% onerng %]</a> available.
+We have more detailed instructions on how to verify your
+<a href="/onerng/">[% onerng %]</a> and <a href="/programmer/">programmer</a>.
 [% END %]
 
 

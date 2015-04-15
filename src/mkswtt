@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# mkswtt - create HTML linking to the current versions of software
+
+# Reads contents of src/sw, finds DEB, RPM and GZ packages, generates checksums and HTML snippets
+cd sw
+for i in deb rpm gz
+do
+    # Redirect stdout to match the value of $i
+    exec 1>$i.tt2
+    latest=$(ls *$i | sort | head -1)
+    printf "<li>Download the package <a href='/sw/$latest'>$latest</a> ($(ls -lh $latest | cut -d' ' -f5))</li>\n"
+    printf "<li>Verify the package checksum<br/>\n"
+    printf "<pre>SHA256: $(sha256sum $latest|cut -d' ' -f1)\n"
+    printf "   MD5: $(md5sum    $latest|cut -d' ' -f1)</pre></li>\n"
+    printf "<li>Install:<pre>"
+    case $i in
+        deb) printf "sudo dpkg -i ";;
+        rpm) printf "sudo rpm -i ";;
+        gz)  printf "tar xzf ";;
+    esac
+    printf "$latest"
+done
+

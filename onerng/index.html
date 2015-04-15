@@ -97,7 +97,7 @@ version, but strict verification is very important for all users of <span class=
 <p>
 
 Both the V1.0 and V2.0 units being shipped currently come with the V3.0 signed firmware.
-These are intended to be used with the V3.1 Host Software.
+These are intended to be used with the V3.n Host Software.
 (Beta-test users have the V1.0 hardware, but unsigned V0.0, V1.0 or V2.0 firmware, and
 therefore have to be careful with their Host Software verification settings)
 </p>
@@ -116,43 +116,47 @@ The pre-requisites for these scripts are small :
 These scripts check the firmware every time they start communicating with <span class='onerngbg'>OneRNG</span>,
 and will refuse to use the unit if the signature checks fail.</p>
 
+
+<div class="install">
 <h4>Debian package</h4>
 <ul>
-<li>Install prerequisites: <code>sudo apt-get install rng-tools at python-gnupg</code></li>
-<li><a href="/sw/onerng_3-1_all.deb">Download the Debian package</a> (8.1KB)</li>
+<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg</pre></li>
+<li>Download the package <a href='/sw/onerng_3-1.1_all.deb'>onerng_3-1.1_all.deb</a> (8.3K)</li>
 <li>Verify the package checksum<br/>
-<code>SHA256: 5a654ae1f14ad9c80ee0a2ff6b2caed4d22af027a5a45d8b1436a1d2c9e9da51</code><br/>
-<code>MD5: 048c5ae7d26d0a7bedc7282d481e0938</code></li>
-<li>Install: <code>sudo dpkg -i onerng_3-1_all.deb</code></li>
-<li>Uninstall: <code>sudo dpkg -r onerng</code></li>
+<pre>SHA256: b77895573dc7cd1cd2e1a0024f27723a27b4aca8fd172d9922d279e6c69d7ba2
+   MD5: b899a0fe967dda27911a5b2503216eed</pre></li>
+<li>Install:<pre>sudo dpkg -i onerng_3-1.1_all.deb
+</pre></li>
+<li>Uninstall: <pre>sudo dpkg -r onerng</pre></li>
 </ul>
 
 <h4>RedHat package</h4>
 <ul>
-<li>Install prerequisites: <code>sudo yum install rng-tools at python-gnupg</code></li>
-<li><a href="/sw/onerng-3-1.fc20.noarch.rpm">Download the RedHat package</a> (8.6KB)</li>
+<li>Install prerequisites: <pre>sudo yum install rng-tools at python-gnupg</pre></li>
+<li>Download the package <a href='/sw/onerng-3.1-1.fc21.noarch.rpm'>onerng-3.1-1.fc21.noarch.rpm</a> (13K)</li>
 <li>Verify the package checksum<br/>
-<code>SHA256: 47f72fdd6f030d7e9016d04fcca2d791b6bea80c584b62056d47cff223ba2a06</code><br/>
-<code>MD5: d71f551416f4dafb69bfeb7ce5fd9821</code></li>
-<li>Install: <code>sudo rpm -i onerng-3-1.fc20.noarch.rpm</code></li>
-<li>Uninstall: <code>sudo rpm -e onerng</code></li>
+<pre>SHA256: 1ee3a6d2e82b8b9952ce7e32659355bfc9ec5122475dc8a319183311f4694584
+   MD5: 481789ac49a8c4f4a5383cbf5912c937</pre></li>
+<li>Install:<pre>sudo rpm -i onerng-3.1-1.fc21.noarch.rpm
+</pre></li>
+<li>Uninstall: <pre>sudo rpm -e onerng</pre></li>
 </ul>
 
 <h4>Tarball</h4>
 <ul>
 <li>Install prerequisites</li>
-<li><a href="/sw/onerng_3.orig.tar.gz">Download the tarball</a> (100KB)</li>
-<li>Verify the tarball checksum<br/>
-<code>SHA256: f649cf5063c77e0af04dbd7474975eafb72af1ff147fb3c732bf019fe466b28a</code><br/>
-<code>MD5: 03ba63bc2dd9ab8b822ff96e7178b734</code></li>
-<li>Install: <pre>
-tar xzf onerng_3.orig.tar.gz
+<li>Download the package <a href='/sw/onerng_3.1.orig.tar.gz'>onerng_3.1.orig.tar.gz</a> (79K)</li>
+<li>Verify the package checksum<br/>
+<pre>SHA256: 31279b45c3653d5e2abb0e63171825fe0683beac083fb902cbe45183b0798a36
+   MD5: 1daa266f1a34d2d6ec55be5bcf5d834c</pre></li>
+<li>Install:<pre>tar xzf onerng_3.1.orig.tar.gz
 cd onerng_1
 sudo make install
 sudo udevadmin control --reload-rules
-</pre>
-<li>Uninstall: <code>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</code></li>
+</pre></li>
+<li>Uninstall: <pre>sudo rm /usr/lib/udev/rules.d/79-onerng.rules /sbin/onerng.sh</pre></li>
 </ul>
+</div>
 
 <h3>Test <span class='onerngbg'>OneRNG</span> Operation</h3>
 <p>
