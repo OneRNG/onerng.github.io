@@ -121,11 +121,11 @@ and will refuse to use the unit if the signature checks fail.</p>
 <h4>Debian package</h4>
 <ul>
 <li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg</pre></li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3-1.1_all.deb?raw=true'>onerng_3-1.1_all.deb</a> (8.3K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.2-1_all.deb?raw=true'>onerng_3.2-1_all.deb</a> (8.5K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: b77895573dc7cd1cd2e1a0024f27723a27b4aca8fd172d9922d279e6c69d7ba2
-   MD5: b899a0fe967dda27911a5b2503216eed</pre></li>
-<li>Install:<pre>sudo dpkg -i onerng_3-1.1_all.deb
+<pre>SHA256: 495b4e29d1a22ecfbcbd3f3a074ae7c6517566723f8a793d1f17a9c7b2957dd2
+   MD5: e510a828f671d6ff4be38e8348dd8b61</pre></li>
+<li>Install:<pre>sudo dpkg -i onerng_3.2-1_all.deb
 </pre></li>
 <li>Uninstall: <pre>sudo dpkg -r onerng</pre></li>
 </ul>
@@ -133,11 +133,11 @@ and will refuse to use the unit if the signature checks fail.</p>
 <h4>RedHat package</h4>
 <ul>
 <li>Install prerequisites: <pre>sudo yum install rng-tools at python-gnupg</pre></li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.1-1.fc21.noarch.rpm?raw=true'>onerng-3.1-1.fc21.noarch.rpm</a> (13K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.2-1.fc21.noarch.rpm?raw=true'>onerng-3.2-1.fc21.noarch.rpm</a> (13K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 1ee3a6d2e82b8b9952ce7e32659355bfc9ec5122475dc8a319183311f4694584
-   MD5: 481789ac49a8c4f4a5383cbf5912c937</pre></li>
-<li>Install:<pre>sudo rpm -i onerng-3.1-1.fc21.noarch.rpm
+<pre>SHA256: 39323c52ea8666785854ce9fc76674d88f8598fb25a9478b475e59e974568234
+   MD5: e88ed743579510209f22a4d7130f04f5</pre></li>
+<li>Install:<pre>sudo rpm -i onerng-3.2-1.fc21.noarch.rpm
 </pre></li>
 <li>Uninstall: <pre>sudo rpm -e onerng</pre></li>
 </ul>
@@ -145,11 +145,11 @@ and will refuse to use the unit if the signature checks fail.</p>
 <h4>Tarball</h4>
 <ul>
 <li>Install prerequisites</li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.1.orig.tar.gz?raw=true'>onerng_3.1.orig.tar.gz</a> (79K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.2.orig.tar.gz?raw=true'>onerng_3.2.orig.tar.gz</a> (101K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 31279b45c3653d5e2abb0e63171825fe0683beac083fb902cbe45183b0798a36
-   MD5: 1daa266f1a34d2d6ec55be5bcf5d834c</pre></li>
-<li>Install:<pre>tar xzf onerng_3.1.orig.tar.gz
+<pre>SHA256: d0138cb4b8433f208a9594e8b94d0cd9dbc82681b14175a0e4332fcf2e524aa7
+   MD5: 5c60c16b9e2ead005527836d68ba8ec8</pre></li>
+<li>Install:<pre>tar xzf onerng_3.2.orig.tar.gz
 cd onerng_1
 sudo make install
 sudo udevadmin control --reload-rules
