@@ -41,9 +41,9 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <tr><td colspan="5"><h3><hr/></h3></td></tr>
 <tr>
 <td>V2.0 internal<br/>Built in China<br/>(Kickstarter stretch reward)</td>
-<td><a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.png" width="200"/></a></td>
-<td>(not yet available)<!--<a href="/pic/V2int-topview-noshield.html"><img src="/pic/V2int-topview-noshield.png" width="200"/></a>
-    <br/><a href="/pic/V2int-botview.html"><img src="/pic/V2int-botview.png" width="200"/></a>--></td>
+<td><a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.jpg" width="200"/></a></td>
+<td><a href="/pic/V2int-topview-noshield.html"><img src="/pic/V2int-topview-noshield.jpg" width="200"/></a>
+    <br/><a href="/pic/V2int-botview.html"><img src="/pic/V2int-botview.jpg" width="200"/></a></td>
 <td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
     <br/>CC2531<br/>F256</td>
 </tr>
@@ -54,6 +54,10 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <h3>Test the Hardware</h3>
 [% FILTER html_para %]
 Plug the [% onerng %] into a USB socket, and confirm that it powers up.
+For the V2 internal device,
+please consult the <a href="http://moonbaseotago.com/man.desc/internal.html">detailed instructions</a>
+on the Moonbase Otago website
+on how to connect this device to your motherboard.
 The LED light should come on and stay brightly lit,
 indicating that the entropy pool is populated and available.
 

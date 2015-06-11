@@ -1,0 +1,12 @@
+[% PROCESS header %]
+
+<h3>Image Assets</h3>
+<h4>V2int-topview-noshield.jpg</h4>
+<p>1.8M  JPEG image data, JFIF standard 1.01</p>
+
+<hr/>
+<div class="imgbar">
+<img src="/pic/V2int-topview-noshield.jpg"/>
+</div>
+
+[% INCLUDE footer %]
