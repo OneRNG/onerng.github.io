@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+        <title>OneRNG - Hardware Random Number Generator</title>
+        <link rel="stylesheet" href="/onerng.css" type="text/css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+
+<body>
+<div class="page">
+<div class="header">
+        <h1><span class="onerng"><a href="/index.html">OneRNG</a></span></h1>
+        <h2><a href="/index.html">Open Hardware Random Number Generator</a></h2>
+        <p><span class='onerngbg'>OneRNG</span> is a reliable and Open <em>verifiable</em> USB-connected hardware entropy source &amp;&nbsp;random number generator.</p>
+        <script type="text/javascript" src="/diceimg.js"></script>
+</div>
+<div id="content">
+
+
+<h3>Installing the Internal v2 <span class='onerngbg'>OneRNG</span></h3>
+
+<p>
+The internal version of the OneRNG is designed to be plugged directly into a motherboard inside a server.
+<a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.jpg" width="400"></a>
+</p>
+
+<h4>Motherboard USB connectors</h4>
+<p>
+
+Most motherboard onboard USB connectors are two rows of 4 or 5 pins - here's an
+example with two such connectors providing 4 internal USB channels - this
+particular one is an "Intel Standard layout", with the blocks labelled "USB56" and "USB67".
+</p>
+
+<p>
+<a href="/pic/mobo-intelstd.html"><img src="/pic/mobo-intelstd.jpg" width="400"></a>
+</p>
+
+<p>
+The Internal <span class='onerngbg'>OneRNG</span> is designed to plug into one row of 4 or 5 pins without blocking
+access to the other row - so you can use that for something else.
+</p>
+
+<p>
+Not all motherboards provide the same USB pin layouts.
+Here's a summary diagram of what the <span class='onerngbg'>OneRNG</span> can support;
+the red boxes (not to scale) show how the OneRNG would sit in various types of
+motherboard connectors. There is only one layout we've found so far that wouldn't be
+compatible - you should check your motherboard's documentation to make sure
+that the <span class='onerngbg'>OneRNG</span> will work for you.
+</p>
+
+<p>
+<a href="/pic/mobo-options.html"><img src="/pic/mobo-options.png" width="400"></a></p>
+
+<h4>Connection Orientation</h4>
+<p>
+
+The <span class='onerngbg'>OneRNG</span> board might look a bit strange, as it has 3 connectors.
+This is to provide you with orientation options to allow the <span class='onerngbg'>OneRNG</span> to fit inside your system case properly.
+You should only connect one of them.
+</p>
+
+<p>
+We've tried to provide as many options as possible for you - different
+motherboards are laid out differently - other components or slots on the board
+may limit what orientations will work for you.
+</p>
+
+<p>
+All three connectors are equivalent - but the board must be plugged in the
+correct way around or you will damage it - the V and D- are indicated with a
+black block on the upper side (not shown in these photos of prototypes) - they
+are shipped pointing outwards, this leaves you with 3 simple ways to install
+the board into a system&nbsp;:-
+</p>
+
+<p>
+<ul>
+<li><a href="/pic/mobo-left.html"><img src="/pic/mobo-left.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-top.html"><img src="/pic/mobo-top.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-right.html"><img src="/pic/mobo-right.jpg" width="400"></a></li>
+</ul>
+</p>
+
+<p>
+You can also carefully bend the connectors down 90 degrees with a pair of
+pliers so that the board can be mounted horizontally - you can't realistically
+expect to be able to bend the pins back without them breaking so, if you choose
+to do this, choose wisely.
+</p>
+
+<p>
+<ul>
+<li><a href="/pic/V2int-bending.html"><img src="/pic/V2int-bending.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-bent.html"><img src="/pic/mobo-bent.jpg" width="400"></a></li>
+</ul>
+(note this last image is for demonstration only - the board shown above is in the USB socket backwards)
+</p>
+
+<p>
+Finally if one of the unused connectors is in the way for mounting you can
+remove it with a pair of diagonal pliers/side cutters - again you can't easily
+undo this so be careful.
+</p>
+
+<p>
+<ul>
+<li><a href="/pic/V2int-snipping.html"><img src="/pic/V2int-snipping.jpg" width="400"></a></li>
+<li><a href="/pic/V2int-snipped.html"><img src="/pic/V2int-snipped.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-bentsnipped.html"><img src="/pic/mobo-bentsnipped.jpg" width="400"></a></li>
+</ul></p>
+
+
+<h3>Support for <span class='onerngbg'>OneRNG</span></h3>
+<p>
+
+Please join the <a href="http://lists.onerng.info/groups/onerng-talk/"><span class='onerngbg'>OneRNG</span> Discussion Group</a> for support queries,
+or contact members of <a href="/team.html">the <span class='onerngbg'>OneRNG</span> team</a> directly.
+</p>
+
+
+</div>
+<div class="footer">
+                <h3><hr/></h3>
+                <div class="CC">
+                    <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/img/CCBYSA-88x31.png" /></a>
+                    <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">The OneRNG.info website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://onerng.info/" property="cc:attributionName" rel="cc:attributionURL">Jim Cheetham</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+                    <p>Website copyright &copy; 2014,2015 Jim Cheetham, jim@inode.co.nz. Pictures copyright &copy; 2014,2015 Jim Cheetham and/or Paul Campbell. Icons copyright various; see source for details.<br/><a href="https://github.com/OneRNG/onerng.github.io">Website source</a> on <a href="https://github.com/">GitHub</a></p>
+                </div>
+        </div>
+        </body>
+</html>
+

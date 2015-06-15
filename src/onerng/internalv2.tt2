@@ -1,0 +1,84 @@
+[% PROCESS header %]
+
+<h3>Installing the Internal v2 [% onerng %]</h3>
+
+<p>
+The internal version of the OneRNG is designed to be plugged directly into a motherboard inside a server.
+<a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.jpg" width="400"></a>
+</p>
+
+<h4>Motherboard USB connectors</h4>
+[% FILTER html_para %]
+Most motherboard onboard USB connectors are two rows of 4 or 5 pins - here's an
+example with two such connectors providing 4 internal USB channels - this
+particular one is an "Intel Standard layout", with the blocks labelled "USB56" and "USB67".
+
+<a href="/pic/mobo-intelstd.html"><img src="/pic/mobo-intelstd.jpg" width="400"></a>
+
+The Internal [% onerng %] is designed to plug into one row of 4 or 5 pins without blocking
+access to the other row - so you can use that for something else.
+
+Not all motherboards provide the same USB pin layouts.
+Here's a summary diagram of what the [% onerng %] can support;
+the red boxes (not to scale) show how the OneRNG would sit in various types of
+motherboard connectors. There is only one layout we've found so far that wouldn't be
+compatible - you should check your motherboard's documentation to make sure
+that the [% onerng %] will work for you.
+
+<a href="/pic/mobo-options.html"><img src="/pic/mobo-options.png" width="400"></a>
+
+[% END %]
+<h4>Connection Orientation</h4>
+[% FILTER html_para %]
+The [% onerng %] board might look a bit strange, as it has 3 connectors.
+This is to provide you with orientation options to allow the [% onerng %] to fit inside your system case properly.
+You should only connect one of them.
+
+We've tried to provide as many options as possible for you - different
+motherboards are laid out differently - other components or slots on the board
+may limit what orientations will work for you.
+
+All three connectors are equivalent - but the board must be plugged in the
+correct way around or you will damage it - the V and D- are indicated with a
+black block on the upper side (not shown in these photos of prototypes) - they
+are shipped pointing outwards, this leaves you with 3 simple ways to install
+the board into a system&nbsp;:-
+
+<ul>
+<li><a href="/pic/mobo-left.html"><img src="/pic/mobo-left.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-top.html"><img src="/pic/mobo-top.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-right.html"><img src="/pic/mobo-right.jpg" width="400"></a></li>
+</ul>
+
+You can also carefully bend the connectors down 90 degrees with a pair of
+pliers so that the board can be mounted horizontally - you can't realistically
+expect to be able to bend the pins back without them breaking so, if you choose
+to do this, choose wisely.
+
+<ul>
+<li><a href="/pic/V2int-bending.html"><img src="/pic/V2int-bending.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-bent.html"><img src="/pic/mobo-bent.jpg" width="400"></a></li>
+</ul>
+(note this last image is for demonstration only - the board shown above is in the USB socket backwards)
+
+Finally if one of the unused connectors is in the way for mounting you can
+remove it with a pair of diagonal pliers/side cutters - again you can't easily
+undo this so be careful.
+
+<ul>
+<li><a href="/pic/V2int-snipping.html"><img src="/pic/V2int-snipping.jpg" width="400"></a></li>
+<li><a href="/pic/V2int-snipped.html"><img src="/pic/V2int-snipped.jpg" width="400"></a></li>
+<li><a href="/pic/mobo-bentsnipped.html"><img src="/pic/mobo-bentsnipped.jpg" width="400"></a></li>
+</ul>
+
+
+
+[% END %]
+
+<h3>Support for [% onerng %]</h3>
+[% FILTER html_para %]
+Please join the <a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> for support queries,
+or contact members of <a href="/team.html">the [% onerng %] team</a> directly.
+[% END %]
+
+[% INCLUDE footer %]
