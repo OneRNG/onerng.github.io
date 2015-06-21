@@ -1,5 +1,5 @@
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.3-1_all.deb?raw=true'>onerng_3.3-1_all.deb</a> (8.6K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.4-1_all.deb?raw=true'>onerng_3.4-1_all.deb</a> (9.1K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: a9801993ffef1cc19778f5613f1837aca4212a0d299d75bd524134f865774928
-   MD5: aac23582111a8c577d406601dd991a27</pre></li>
-<li>Install:<pre>sudo dpkg -i onerng_3.3-1_all.deb
+<pre>SHA256: 78f1c2f52ae573e3b398a695ece7ab9f41868252657ea269f0d5cf0bd4f2eb59
+   MD5: 5cd82ec08d4b05d3b817b4a3d6d527a0</pre></li>
+<li>Install:<pre>sudo dpkg -i onerng_3.4-1_all.deb
