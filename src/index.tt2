@@ -29,7 +29,7 @@ improving the quality of the random numbers used by your software.
 <h3><img src="img/icon_5909.svg" width="24"/> Current State</h3>
 [% FILTER html_para %]
 The V2 [% onerng %] is currently for sale on the
-<a href="http://moonbase.tictail.com/">Moonnbase Otago eshop</a>.
+<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
 
 This took us longer than originally intended,
 we had to replace some of the original components due to
