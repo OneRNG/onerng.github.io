@@ -28,34 +28,28 @@ improving the quality of the random numbers used by your software.
 
 <h3><img src="img/icon_5909.svg" width="24"/> Current State</h3>
 [% FILTER html_para %]
-We have completed our
+The V2 [% onerng %] is currently for sale on the
+<a href="http://moonbase.tictail.com/">Moonnbase Otago eshop</a>.
+
+This took us longer than originally intended,
+we had to replace some of the original components due to
+a component interaction that made some units run too hot;
+given that we rely on thermal noise as a driver for one
+of the entropy sources, we wanted to deal with this issue properly.
+
+The original
 <a href="https://www.kickstarter.com/projects/moonbaseotago/onerng-an-open-source-entropy-generator" />Kickstarter</a>
-campaign, that was funded to ~450% of the target.
+campaign was funded to ~450% of the target,
+and all units have been delivered.
 Thanks to all our backers!
-
-Initial manufacturing in China/Shenzen has been completed,
-and all the Kickstarter orders have been sent out.
-
-Unfortunately,
-last minute component choices we had to make in China mean
-that some units run too hot,
-and that may intermittent faults.
-We have identified the problem
-and will shortly be announcing a replacement program.
-
-As a consequence, the web store for non-Kickstarter units is on hold.
-We need to replace the unreliable components on the stocked units
-before putting them up for sale, and this requires a fair
-bit of manual labour and time.
-We will be dealing with faulty Kickstarter units first,
-and reworking the store stock after that.
 
 [% END %]
 <h3><img src="img/icon_5086.svg" width="24" /> More Information</h3>
 <ul>
   <li><a href="whatisonerng.html">What is [% onerng %]?</a> &mdash; Technical details</li>
 <!-- Coming soon  <li><a href="whyonerng.html">What is [% onerng %] for?</a> &mdash; Using Entropy and Random Numbers</li> -->
-  <li>Where can I get a [% onerng %] from? &mdash; Moonbase Otago eshop coming soon (mid 2015)</li>
+  <li>Where can I get a [% onerng %] from? &mdash; The 
+<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a> is now taking orders</li>
   <li>I have a [% onerng %] &mdash; How can I <a href="/onerng/">verify and use</a> my unit?</li>
   <li>I have a [% onerng %] programmer &mdash; How can I <a href="/programmer/">verify and use</a> my unit?</li>
   <li><a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> &mdash; Email/Forum</li>
