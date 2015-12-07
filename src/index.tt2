@@ -26,22 +26,31 @@ By default, it will feed entropy into your Operating System's existing RNG facil
 improving the quality of the random numbers used by your software.
 [% END %]
 
-<h3><img src="img/icon_5909.svg" width="24"/> Current State</h3>
+<h3><img src="img/icon_5909.svg" width="24"/> Buy it now</h3>
 [% FILTER html_para %]
 The V2 [% onerng %] is currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
 
-This took us longer than originally intended,
-we had to replace some of the original components due to
-a component interaction that made some units run too hot;
-given that we rely on thermal noise as a driver for one
-of the entropy sources, we wanted to deal with this issue properly.
+You can buy the normal external version, as well as a board intended to be
+mounted directly on the motherboard, inside the case.
 
+For those who wish to upload their own firmware, a programming unit is
+also available.
+[% END %]
+
+<h3><img src="img/icon_5909.svg" width="24"/> Current State</h3>
+[% FILTER html_para %]
 The original
 <a href="https://www.kickstarter.com/projects/moonbaseotago/onerng-an-open-source-entropy-generator" />Kickstarter</a>
 campaign was funded to ~450% of the target,
 and all units have been delivered.
 Thanks to all our backers!
+
+All of the Kickstarter goals have been, if you haven't reeceived
+your order please get in touch.
+
+[% onerng %] is currently for sale on the
+<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
 
 [% END %]
 <h3><img src="img/icon_5086.svg" width="24" /> More Information</h3>
