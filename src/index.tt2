@@ -26,7 +26,7 @@ By default, it will feed entropy into your Operating System's existing RNG facil
 improving the quality of the random numbers used by your software.
 [% END %]
 
-<h3><img src="img/icon_5909.svg" width="24"/> Buy it now</h3>
+<h3><img src="img/noun_256164.svg" width="24"/> Buy it now</h3>
 [% FILTER html_para %]
 The V2 [% onerng %] is currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
