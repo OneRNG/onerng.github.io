@@ -1,32 +1,127 @@
 [% PROCESS header %]
 
+[% FILTER html_para %]
+
+<h3>OneRNG</h3>
+[% onerng %] is an entropy source / hardware random number generator (HWRNG),
+connected via USB to your computer.
+
+The provision of entropy to your computer system is <em>critical</em>
+for any software security system to be effective.
+There are many potential sources of entropy,
+but the majority of them are susceptible to a number of different attacks
+that result in subversion of your security.
+Many of these attacks are undetectable in normal working conditions.
+
+In order to address these problems, we present [% onerng %].
+This is deliberately a simple device,
+which means that instead of having to blindly trust
+the hardware you are attaching to your computer,
+you have the ability to <em>verify</em> that the software and hardware
+of this device is to your standards.
+
+We are not aware of any other equivalent device that promotes
+this essential feature of security for you, the user.
+
 <div class="imgbar">
 <a href="pic/V2-topview-shielded.html"><img src="pic/V2-topview-shielded.png" width="30%" title="OneRNG"/></a>
+</div>
+
+<h3>TL;DR - Shut up and take my money!</h3>
+The V2 [% onerng %] is currently for sale on the
+<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
+
+<h3>Verify your security</h3>
+<h4>Don't trust us; trust yourself</h4>
+Many decisions in our lives are made by extending trust to other people,
+and this is an essential part of what makes the world work.
+Vendors have reputations, affected by news and reviews.
+Many of them have great reputations, and well-deserved.
+
+But there are more and more verified examples where the reputation of
+the original vendor is undermined by the actions of others; supply-chains
+are subverted, products are tampered with while being shipped, and so on.
+
+When it comes to your own computer, there's a huge amount that you have
+to trust, that you cannot inspect. Many people are still using operating
+systems that do not disclose their own source code; even where the code is
+available many people do not verify that the binaries they are running
+have actually come from the claimed code. And then we have to start looking
+at the actual hardware, and wonder about the code running in the BIOS,
+on the connected devices (such as disk controllers),
+even the microcode on the CPU.
+
+[% onerng %] can't address all those issues, but we can give you a source
+of random data that can be used as the basis of all your encryption.
+You can inspect this source, and <em>verify</em> that it is working
+exactly the way we have described. Any tampering with the device before
+you get it should be detectable - hardware or software.
+
+You don't need to trust us to provide this essential cornerstone of
+security - you can <em>verify</em> [% onerng %] for yourself.
+
+<h4>Open Source
+<img src="img/gplv3.svg" width="48" title="GNU General Public License version 3 logo"/>
+<img src="img/lgplv3.svg" width="48" title="GNU Lesser General Public License version 3 logo"/>
+<img src="img/oshw-logo.svg" width="48" title="Open Source Hardware logo"/></h4>
+
+First, the design and software of the [% onerng %] is completely open.
+This means that the hardware layout is fully published,
+and that the software used on the device is available to you in source form.
+We achieve this by releasing the sources under the 
+GNU GPLv3 and LGPLv3 licenses, in accordance with
+Open Source Hardware Association guidelines.
+
+<h4>Physical inspection</h4>
+Second, uniquely amongst such devices,
+we deliberately construct the [% onerng %] to be physically big enough
+to be inspected by eye.
+You can remove the "tin foil hat" shield from the device
+(please put it back on before plugging it in though),
+and confirm that the board layout really does match the design.
+
+Far too many devices make their hardware too small to easily inspect,
+with essential connections hidden inside or underneath other components.
+Some even cover sections of their boards with opaque resin,
+which seems to do a great job of preventing post-delivery tampering,
+but prevents the end-user from doing their own inspection of the device.
+
+<div class="imgbar">
 <a href="pic/V2-topview-withshield.html"><img src="pic/V2-topview-withshield.png" width="30%" title="OneRNG with shield detached"/></a>
 <a href="pic/V2-topview-noshield.html"><img src="pic/V2-topview-noshield.png" width="30%" title="OneRNG with shield removed"/></a>
 </div>
 
-<h3>OneRNG</h3>
-[% FILTER html_para %]
-[% onerng %] is an entropy source / hardware random number generator (HWRNG),
-connected via USB to your computer.
+<h4>Component ubiquity</h4>
+There is one complex chip on the [% onerng %] which cannot be verified by eye.
+The CC2531 SoC
+(<a href="http://www.ti.com/product/CC2531">from Texas Instruments</a>)
+is small, and it is theoretically possible that the
+chip fitted to your device has been tampered with or even been outright
+substituted for an alternative before you received your device.
 
-It is an
-<img src="img/oshw-logo.svg" width="48" title="Open Source Hardware logo"/>
-Open Hardware design, using
-<img src="img/gplv3.svg" width="48" title="GNU General Public License version 3 logo"/>
-<img src="img/lgplv3.svg" width="48" title="GNU Lesser General Public License version 3 logo"/>
-Open Source/Free firmware.
+However, the CC2531 is cheap, ubiquitous, and
+found in a huge range of consumer electronics around the world.
+If you want to address the risk that your device has been subverted,
+just buy any consumer device also using this chip, preferably second-hand,
+and swap the chips over.
 
-This allows you to fully verify the operation of the device,
-to modify it to fit your uses,
-and to design your own devices using parts of our existing proven solution.
+If you need to entertain the possibility that <em>all</em> CC2531 chips
+ever produced have been compromised, we can help you there as well.
+The most likely component on the chip to have been 'backdoored'
+(and to never have been detected)
+is the AES module. Our software does not use this module at all;
+instead we use our own code to provide (albeit a bit more slowly)
+the equivalent functions.
 
-By default, it will feed entropy into your Operating System's existing RNG facilities,
-improving the quality of the random numbers used by your software.
+<h4>Integrate with your OS</h4>
+While you can talk directly to the [% onerng %] with a simple
+serial connection, we expect that most users will want to use it to
+feed entropy into your Operating System's existing RNG facilities,
+improving the quality of the all random numbers used by your computer.
+
 [% END %]
 
-<h3><img src="img/noun_256164.svg" width="24"/> Buy it now</h3>
+<h3>Buy it now</h3>
 [% FILTER html_para %]
 The V2 [% onerng %] is currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
@@ -36,34 +131,19 @@ mounted directly on the motherboard, inside the case.
 
 For those who wish to upload their own firmware, a programming unit is
 also available.
-[% END %]
-
-<h3><img src="img/icon_5909.svg" width="24"/> Current State</h3>
-[% FILTER html_para %]
-The original
-<a href="https://www.kickstarter.com/projects/moonbaseotago/onerng-an-open-source-entropy-generator" />Kickstarter</a>
-campaign was funded to ~450% of the target,
-and all units have been delivered.
-Thanks to all our backers!
-
-All of the Kickstarter goals have been, if you haven't reeceived
-your order please get in touch.
-
-[% onerng %] is currently for sale on the
-<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
 
 [% END %]
-<h3><img src="img/icon_5086.svg" width="24" /> More Information</h3>
+
+<h3>More Information</h3>
 <ul>
-  <li><a href="whatisonerng.html">What is [% onerng %]?</a> &mdash; Technical details</li>
-<!-- Coming soon  <li><a href="whyonerng.html">What is [% onerng %] for?</a> &mdash; Using Entropy and Random Numbers</li> -->
   <li>Where can I get a [% onerng %] from? &mdash; The 
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a> is now taking orders</li>
+  <li><a href="whatisonerng.html">What is [% onerng %]?</a> &mdash; Technical details</li>
   <li>I have a [% onerng %] &mdash; How can I <a href="/onerng/">verify and use</a> my unit?</li>
   <li>I have a [% onerng %] programmer &mdash; How can I <a href="/programmer/">verify and use</a> my unit?</li>
   <li><a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> &mdash; Email/Forum</li>
-  <li><a href="presentations.html">Presentations &amp; Reviews</a></li>
-  <li><a href="team.html">Who runs the [% onerng %] project?</a></li>
+  <li><a href="presentations.html">Presentations, Reviews &amp; Awards</a></li>
+  <li><a href="history.html">The [% onerng %] story</a> &mdash; Who runs the [% onerng %] project?</li>
 </ul>
 
 [% INCLUDE footer %]
