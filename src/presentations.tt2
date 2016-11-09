@@ -1,5 +1,10 @@
 [% PROCESS header %]
 
+<h3>Awards</h3>
+<ul>
+<li><a href="http://nzosa.org.nz/">NZ Open Source Awards</a> 2016, Open Source Software Project, winner</li>
+</ul>
+
 <h3>Presentations:</h3>
 <ul>
 <li><a href="https://conference.auscert.org.au/jim-cheetham">AusCERT2015</a>, 3 June 2015 (<a href="http://onerng.info/AusCERT2015">slides</a>)</li>

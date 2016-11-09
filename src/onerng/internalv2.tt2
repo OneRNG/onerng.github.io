@@ -1,14 +1,17 @@
 [% PROCESS header %]
 
 <h3>Installing the Internal v2 [% onerng %]</h3>
+[% FILTER html_para %]
 
-<p>
 The internal version of the OneRNG is designed to be plugged directly into a motherboard inside a server.
+<h4>WARNING: danger of incorrect alignment</h4>
+If you connect the [% onerng %] incorrectly to your motherboard,
+you can easily cause damage to all components by mixing power lines
+with data lines. Please be very careful.
+
 <a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.jpg" width="400"></a>
-</p>
 
 <h4>Motherboard USB connectors</h4>
-[% FILTER html_para %]
 Most motherboard onboard USB connectors are two rows of 4 or 5 pins - here's an
 example with two such connectors providing 4 internal USB channels - this
 particular one is an "Intel Standard layout", with the blocks labelled "USB56" and "USB67".
@@ -27,9 +30,7 @@ that the [% onerng %] will work for you.
 
 <a href="/pic/mobo-options.html"><img src="/pic/mobo-options.png" width="400"></a>
 
-[% END %]
 <h4>Connection Orientation</h4>
-[% FILTER html_para %]
 The [% onerng %] board might look a bit strange, as it has 3 connectors.
 This is to provide you with orientation options to allow the [% onerng %] to fit inside your system case properly.
 You should only connect one of them.
@@ -52,8 +53,8 @@ the board into a system&nbsp;:-
 
 You can also carefully bend the connectors down 90 degrees with a pair of
 pliers so that the board can be mounted horizontally - you can't realistically
-expect to be able to bend the pins back without them breaking so, if you choose
-to do this, choose wisely.
+expect to be able to bend the pins back without them breaking,
+so if you choose to do this, choose wisely.
 
 <ul>
 <li><a href="/pic/V2int-bending.html"><img src="/pic/V2int-bending.jpg" width="400"></a></li>
@@ -71,12 +72,7 @@ undo this so be careful.
 <li><a href="/pic/mobo-bentsnipped.html"><img src="/pic/mobo-bentsnipped.jpg" width="400"></a></li>
 </ul>
 
-
-
-[% END %]
-
 <h3>Support for [% onerng %]</h3>
-[% FILTER html_para %]
 Please join the <a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> for support queries,
 or contact members of <a href="/team.html">the [% onerng %] team</a> directly.
 [% END %]

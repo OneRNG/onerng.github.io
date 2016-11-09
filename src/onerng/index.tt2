@@ -5,7 +5,6 @@
 [% FILTER html_para %]
 We are working to populate these pages as quickly as possible, so please bear with us!
 
-[% END %]
 <h3>Verify the Hardware</h3>
 <ul>
 <li>First, you need to identify which variation of the [% onerng %] hardware you have</li>
@@ -19,26 +18,7 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <tbody>
 <tr><th>Version</th><th>Picture</th><th>Visual Inspection</th><th>CPU</th><th>Diagrams</th></tr>
 <tr><td colspan="5"><h3><hr/></h3></td></tr>
-<tr>
-<td>V1.0<br/>Built in NZ<br/>(Kickstarter $110 reward)</th>
-<td><a href="/pic/V1-topview-shielded.html"><img src="/pic/V1-topview-shielded.png" width="200"/></a></td>
-<td><a href="/pic/V1-topview-noshield.html"><img src="/pic/V1-topview-noshield.png" width="200"/></a>
-    <br/><a href="/pic/V1-botview-sticker.html"><img src="/pic/V1-botview-sticker.png" width="200"/></a>
-    <br/><a href="/pic/V1-botview.html"><img src="/pic/V1-botview.png" width="200"/></a></td>
-<td><a href="/pic/V1-CPU.html"><img src="/pic/V1-CPU.png" width="200"/></a>
-    <br/>CC2531<br/>F256</td>
-<td><a href="/pic/V1-layout-top.html"><img src="/pic/V1-layout-top.png" width="200"/></a>
-    <br/><a href="/pic/V1-layout-bot.html"><img src="/pic/V1-layout-bot.png" width="200"/></a></td>
-</tr>
-<tr><td colspan="5"><h3><hr/></h3></td></tr>
-<tr>
-<td>V2.0<br/>Built in China<br/>(Kickstarter $50 reward)</td>
-<td><a href="/pic/V2-topview-shielded.html"><img src="/pic/V2-topview-shielded.png" width="200"/></a></td>
-<td><a href="/pic/V2-topview-noshield.html"><img src="/pic/V2-topview-noshield.png" width="200"/></a>
-    <br/><a href="/pic/V2-botview.html"><img src="/pic/V2-botview.png" width="200"/></a></td>
-<td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
-    <br/>CC2531<br/>F256</td>
-<tr><td colspan="5"><h3><hr/></h3></td></tr>
+
 <tr>
 <td>V2.0 internal<br/>Built in China<br/>(Kickstarter stretch reward)</td>
 <td><a href="/pic/V2int-topview-shielded.html"><img src="/pic/V2int-topview-shielded.jpg" width="200"/></a></td>
@@ -46,13 +26,41 @@ We are working to populate these pages as quickly as possible, so please bear wi
     <br/><a href="/pic/V2int-botview.html"><img src="/pic/V2int-botview.jpg" width="200"/></a></td>
 <td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
     <br/>CC2531<br/>F256</td>
+<td><a href="/pic/V2-layout-top.html"><img src="/pic/V2-layout-top.png" width="200"/></a>
+    <br/><a href="/pic/V2-layout-bot.html"><img src="/pic/V2-layout-bot.png" width="200"/></a></td>
 </tr>
+
+<tr><td colspan="5"><h3><hr/></h3></td></tr>
+
+<tr>
+<td>V2.0<br/>Built in China<br/>(Kickstarter $50 reward)</td>
+<td><a href="/pic/V2-topview-shielded.html"><img src="/pic/V2-topview-shielded.png" width="200"/></a></td>
+<td><a href="/pic/V2-topview-noshield.html"><img src="/pic/V2-topview-noshield.png" width="200"/></a>
+    <br/><a href="/pic/V2-botview-sticker.html"><img src="/pic/V2-botview-sticker.png" width="200"/></a>
+    <br/><a href="/pic/V2-botview.html"><img src="/pic/V2-botview.png" width="200"/></a></td>
+<td><a href="/pic/V2-CPU.html"><img src="/pic/V2-CPU.png" width="200"/></a>
+    <br/>CC2531<br/>F256</td>
+<td><a href="/pic/V2-layout-top.html"><img src="/pic/V2-layout-top.png" width="200"/></a>
+    <br/><a href="/pic/V2-layout-bot.html"><img src="/pic/V2-layout-bot.png" width="200"/></a></td>
+
+<tr><td colspan="5"><h3><hr/></h3></td></tr>
+
+<tr>
+<td>V1.0<br/>Built in NZ<br/>(Kickstarter $110 reward)</th>
+<td><a href="/pic/V1-topview-shielded.html"><img src="/pic/V1-topview-shielded.png" width="200"/></a></td>
+<td><a href="/pic/V1-topview-noshield.html"><img src="/pic/V1-topview-noshield.png" width="200"/></a>
+    <br/><a href="/pic/V1-botview.html"><img src="/pic/V1-botview.png" width="200"/></a></td>
+<td><a href="/pic/V1-CPU.html"><img src="/pic/V1-CPU.png" width="200"/></a>
+    <br/>CC2531<br/>F256</td>
+<td><a href="/pic/V1-layout-top.html"><img src="/pic/V1-layout-top.png" width="200"/></a>
+    <br/><a href="/pic/V1-layout-bot.html"><img src="/pic/V1-layout-bot.png" width="200"/></a></td>
+</tr>
+
 </tbody>
 </table>
 
 
 <h3>Test the Hardware</h3>
-[% FILTER html_para %]
 Plug the [% onerng %] into a USB socket, and confirm that it powers up.
 For the V2 internal device,
 please consult <a href="/onerng/internalv2.html">these installation instructions</a>
@@ -70,10 +78,8 @@ Remove the [% onerng %] from your system before proceeding to the Software steps
 
 We appreciate that these steps might be inconvenient for the V2.0 Internal hardware
 version, but strict verification is very important for all users of [% onerng %].
-[% END %]
 
 <h3>Install the Host Software</h3>
-[% FILTER html_para %]
 Both the V1.0 and V2.0 units being shipped currently come with the V3.0 signed firmware.
 These are intended to be used with the V3.n Host Software.
 (Beta-test users have the V1.0 hardware, but unsigned V0.0, V1.0 or V2.0 firmware, and
@@ -88,7 +94,6 @@ The pre-requisites for these scripts are small :
 These scripts check the firmware every time they start communicating with [% onerng %],
 and will refuse to use the unit if the signature checks fail.
 
-[% END %]
 
 <div class="install">
 <h4>Debian package</h4>
@@ -120,7 +125,6 @@ sudo udevadmin control --reload-rules
 </div>
 
 <h3>Test [% onerng %] Operation</h3>
-[% FILTER html_para %]
 Once the Host Software has been installed, insert your [% onerng %]. Test the correct operation of the hardware
 and software combined by demanding large quantities of data from <code>/dev/random</code>.
 
@@ -129,10 +133,8 @@ and software combined by demanding large quantities of data from <code>/dev/rand
 If [% onerng %] is working correctly, you should see the LED light dim as the onboard entropy pool is rapidly depleted.
 
 When you interrupt the <code>cat</code> command (by pressing control-C) the LED should return to normal brightness.
-[% END %]
 
 <h3>Support for [% onerng %]</h3>
-[% FILTER html_para %]
 Please join the <a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> for support queries,
 or contact members of <a href="/team.html">the [% onerng %] team</a> directly.
 [% END %]

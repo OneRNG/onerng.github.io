@@ -1,0 +1,12 @@
+[% PROCESS header %]
+
+<h3>Image Assets</h3>
+<h4>V2-layout-bot.png</h4>
+<p>45K  PNG image data, 1974 x 1035, 8-bit/color RGB, non-interlaced</p>
+
+<hr/>
+<div class="imgbar">
+<img src="/pic/V2-layout-bot.png"/>
+</div>
+
+[% INCLUDE footer %]

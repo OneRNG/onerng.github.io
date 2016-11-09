@@ -1,16 +1,78 @@
 [% PROCESS header %]
 
-<h3><img src="img/icon_32014/icon_32014.svg" width="24" /> Team Members</h3>
-<div>The core team at [% onerng %] is based in Dunedin, New Zealand :-
-<ul>
-        <li>Jim Cheetham &mdash; Information Security &mdash; <a href="mailto:jim@inode.co.nz">jim@inode.co.nz</a><br/>
-        Jim has been in the security field for the last 10 years, and in the unix/network field for over 25 years. Currently working at the University of Otago's Information Security Office.<br/>
-        <a href="https://www.linkedin.com/in/jimcheetham">https://www.linkedin.com/in/jimcheetham</a></li>
-        <li>Paul Campbell &mdash; Hardware Design &mdash; <a href="paul@taniwha.com">paul@taniwha.com</a><br/>
-        Paul hasn't said anything pithy about himself yet, but has done chip design and on-board
-        crypto work for many years, creates Open Hardware projects and keeps the
-        <a href="http://dspace.org.nz/">Dunedin MakerSpace</a> running.</li>
-</ul>
-</div>
+[% FILTER html_para %]
+<h3>History</h3>
+Jim Cheetham has always wanted to get a decent entropy source for
+the computers that he has been responsible for, but didn't manage
+to grab an EntropyKey while they were still available.
+
+Instead, in late 2013 he decided to make his own - but not
+without help! Questions were asked of cryptographers
+<a href="http://financialcryptography.com/">Ian Grigg</a>
+and <a href="https://www.cs.auckland.ac.nz/~pgut001/">Peter Gutmann</a>
+to make sure the [% onerng %] goals were
+reasonable and useful, and then he asked Paul Campbell for
+ideas on the hardware front.
+
+Almost over the weekend, Paul repurposed some of his own 
+existing Open Source hardware projects to make a prototype version.
+[% onerng %] was alive!
+
+<h4>Funding via Kickstarter</h4>
+Once a set of working devices had been created using Paul's
+new Pick &amp; Place machine, we started to look at how to
+manufacture a reasonable volume of machines in a less manually-intensive
+way.
+
+We settled on a Kickstarter fundraising, to collect the cash needed
+to set up manufacturing in Shenzen, China. The beauty of [% onerng %]'s
+attitude to verifiabililty rather than trust meant that we could
+embrace the flexibility of Chinese manufacturing, without having to
+worry about supply-chain subversion.
+
+<a href="https://www.kickstarter.com/projects/moonbaseotago/onerng-an-open-source-entropy-generator/description">The campaign</a>
+started in mid-December 2014, and completed with a very
+good indication of the demand for [% onerng %] - we met our initial goal
+within only 6 days, and by the end of the campaign we were funded
+to 485%.
+
+Our estimated delivery date was May 2015, and by the end of May 2015
+we had shipped all the units. There was a small return rate to deal
+with an unreliable component, and these were all fixed manually.
+
+<h4>New Zealand Open Source Awards 2016</h4>
+On the 25th of October 2016, Paul Campbell won the NZOSA award for
+<a href="http://nzosa.org.nz/categories/">Open Source Software Project</a>
+with the [% onerng %] Project,
+saying "after all, most good hardware projects are mostly software".
+
+
+<h4>Version 3</h4>
+We are currently planning version 3 of the unit, and gearing up
+for another production run in Shenzen. Due to the care that we take
+with the firmware image, Paul needs to be present to load and verify
+the devices. 
+
+<h3>Team Members</h3>
+The core team at [% onerng %] is based in Dunedin, New Zealand.
+
+<h4>Jim Cheetham</h4>
+Jim has been full-time in the security field since the mid-2000s, and in the unix/networking field since the mid-1980s.
+He is motivated by products that are <em>useful</em>, and likes to understand
+the theoretical limits of a technology.
+[% onerng %] represents a way to improve the underlying security of
+many operating systems and tools, and to avoid security mis-steps.
+<br/><a href="https://www.linkedin.com/in/jimcheetham">https://www.linkedin.com/in/jimcheetham</a></li>
+
+<h4>Paul Campbell</h4>
+Paul has been in the hardware and chip design fields for many years,
+producing on-board crypto devices for real-time use cases.
+He also enthuiastically supports the Open Source Hardware and Hackerspace
+movements, and has a deep distrust of governments who choose to spy
+on their own citizens. [% onerng %] is one of the ways to push
+back against the system, and to take responsibility for your own security.
+
+
+[% END %]
 
 [% INCLUDE footer %]

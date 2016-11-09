@@ -4,13 +4,16 @@
 
 <h3>OneRNG</h3>
 [% onerng %] is an entropy source / hardware random number generator (HWRNG),
-connected via USB to your computer.
+designed to be connected via USB to your computer.
+
+Entropy is collected from an avalanche diode circuit and optionally
+an RF circuit, whitened and presented over a USB/Serial connection.
 
 The provision of entropy to your computer system is <em>critical</em>
 for any software security system to be effective.
 There are many potential sources of entropy,
-but the majority of them are susceptible to a number of different attacks
-that result in subversion of your security.
+but the majority of them are susceptible to biases &amp; attacks
+that can result in the subversion of your privacy &amp; security.
 Many of these attacks are undetectable in normal working conditions.
 
 In order to address these problems, we present [% onerng %].
@@ -30,6 +33,7 @@ this essential feature of security for you, the user.
 <h3>TL;DR - Shut up and take my money!</h3>
 The V2 [% onerng %] is currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
+Sadly we only have the internal version in stock at the moment.
 
 <h3>Verify your security</h3>
 <h4>Don't trust us; trust yourself</h4>
@@ -60,17 +64,22 @@ you get it should be detectable - hardware or software.
 You don't need to trust us to provide this essential cornerstone of
 security - you can <em>verify</em> [% onerng %] for yourself.
 
-<h4>Open Source
-<img src="img/gplv3.svg" width="48" title="GNU General Public License version 3 logo"/>
-<img src="img/lgplv3.svg" width="48" title="GNU Lesser General Public License version 3 logo"/>
-<img src="img/oshw-logo.svg" width="48" title="Open Source Hardware logo"/></h4>
+<h4>Open Source :
+<img src="img/gplv3.svg" height="18" title="GNU General Public License version 3 logo"/>
+<img src="img/lgplv3.svg" height="18" title="GNU Lesser General Public License version 3 logo"/>
+<img src="img/oshwa.svg" height="18" title="Open Source Hardware Association logo"/>
+<img src="img/oshw-logo.svg" height="18" title="Open Source Hardware logo"/>
+</h4>
 
 First, the design and software of the [% onerng %] is completely open.
 This means that the hardware layout is fully published,
 and that the software used on the device is available to you in source form.
 We achieve this by releasing the sources under the 
-GNU GPLv3 and LGPLv3 licenses, in accordance with
-Open Source Hardware Association guidelines.
+<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</a>
+and <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">LGPLv3</a>
+licenses, in accordance with the Open Source Hardware Association
+<a href="http://www.oshwa.org/definition/">community definition</a>.
+[% onerng %] is now fully OSHWA certified, with UID NZ000001.
 
 <h4>Physical inspection</h4>
 Second, uniquely amongst such devices,
@@ -119,18 +128,53 @@ serial connection, we expect that most users will want to use it to
 feed entropy into your Operating System's existing RNG facilities,
 improving the quality of the all random numbers used by your computer.
 
+Even if you have untrusted entropy sources in your machine,
+mixing the <em>verifiable</em> [% onerng %] into
+your random number generator will mitigate
+weaknesses or attack vectors from the other sources.
+
+<h4>Protected from software exploitation</h4>
+Many USB-connected devices are reprogrammable over their USB interface,
+which means you can never be sure that the firmware on the device is
+doing what you want it to do
+(q.v. BadUSB)
+
+The [% onerng %] default firmware does not allow itself to be reprogrammed
+over the USB bus; instead you need to connect a dedicated programmer unit
+(available separately, licensed in the same way as [% onerng %] itself).
+
+Of course, if you <em>want</em> to reprogram the firmware yourself to permit
+USB-reprogramming,
+because that suits your environment,
+that's completely fine. That's what Open Source software and hardware is all about.
+
+<h4>Verify the software as well as the hardware</h4>
+The firmware for [% onerng %] is actually pretty small,
+compared to the 256KB of storage available on the CC2531.
+In order to be confident that the firmware on your unit is the
+one we intended it to be, we padded the firmware image out with random data
+up to almost 256KB, and digitally signed it.
+That signature can be verified by you, and indeed our default OS tools
+check the complete 256KB image against
+the signature every time the device is plugged in.
+
+Of course, if you want to put your own firmware image on the device,
+that will over-write or otherwise invalidate the signature.
+
 [% END %]
 
 <h3>Buy it now</h3>
 [% FILTER html_para %]
 The V2 [% onerng %] is currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
-
+Unfortunately, only the internal version is in stock at the moment.
+<!--
 You can buy the normal external version, as well as a board intended to be
 mounted directly on the motherboard, inside the case.
 
 For those who wish to upload their own firmware, a programming unit is
 also available.
+-->
 
 [% END %]
 

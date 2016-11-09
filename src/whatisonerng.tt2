@@ -3,8 +3,10 @@
 <h3>What is [% onerng %]?</h3>
 [% FILTER html_para %]
 [% onerng %] is a small hardware unit
-that generates/collects informational entropy (random numbers)
-and presents it over a USB/Serial connection to your computer.
+that generates/collects informational entropy (random numbers),
+primarily from an avalanche diode circuit,
+but also from an RF circuit if you choose to enable it,
+and presents the results over a USB/Serial connection to your computer.
 
 This allows you to improve the quality and availability
 of random data needed by your computer
@@ -12,16 +14,14 @@ for cryptography, security, research &amp; operational purposes.
 
 [% onerng %] is designed to be <em>verifiable</em>, <em>hackable</em> and affordable.
 
-The primary noise source on [% onerng %] is
-an avalanche diode circuit.
-There is also an RF circuit if you choose to enable it.
 [% END %]
 
 
 <h3>Verifiable</h3>
 [% FILTER html_para %]
 When you receive an [% onerng %] from us, you should
-carefully verify that the unit you have is what you need.
+<a href="/onerng/">carefully verify</a>
+that the unit you have is what you wanted.
 
 [% onerng %] is designed so that the hardware can be visually inspected,
 so that you can verify the layout and components match the design
