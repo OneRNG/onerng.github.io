@@ -31,9 +31,9 @@ this essential feature of security for you, the user.
 </div>
 
 <h3>TL;DR - Shut up and take my money!</h3>
-The V2 [% onerng %] is currently for sale on the
+The V3 external and V2 internal [% onerng %] are currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
-Sadly we only have the internal version in stock at the moment.
+Sadly the programmer is not currently in stock.
 
 <h3>Verify your security</h3>
 <h4>Don't trust us; trust yourself</h4>
@@ -79,7 +79,9 @@ We achieve this by releasing the sources under the
 and <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html">LGPLv3</a>
 licenses, in accordance with the Open Source Hardware Association
 <a href="http://www.oshwa.org/definition/">community definition</a>.
-[% onerng %] is now fully OSHWA certified, with UID NZ000001.
+[% onerng %] is now fully
+<a href="http://certificate.oshwa.org/certification-directory/">OSHWA certified</a>,
+with UID NZ000001.
 
 <h4>Physical inspection</h4>
 Second, uniquely amongst such devices,
@@ -165,16 +167,9 @@ that will over-write or otherwise invalidate the signature.
 
 <h3>Buy it now</h3>
 [% FILTER html_para %]
-The V2 [% onerng %] is currently for sale on the
+The V3 external and V2 internal [% onerng %] are currently for sale on the
 <a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
-Unfortunately, only the internal version is in stock at the moment.
-<!--
-You can buy the normal external version, as well as a board intended to be
-mounted directly on the motherboard, inside the case.
-
-For those who wish to upload their own firmware, a programming unit is
-also available.
--->
+Unfortunately, the programmer is not available at the moment.
 
 [% END %]
 
