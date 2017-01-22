@@ -155,7 +155,7 @@ to the <code>rngd</code> daemon present on most Linux distributions.
 
 <p>
 The pre-requisites for these scripts are small :
-<code>at</code>, <code>rng-tools</code> and <code>python-gnupg</code>
+<code>at</code>, <code>rng-tools</code>, <code>python-gnupg</code> and <code>openssl</code>
 </p>
 
 <p>
@@ -167,12 +167,12 @@ and will refuse to use the unit if the signature checks fail.
 <div class="install">
 <h4>Debian package</h4>
 <ul>
-<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg</pre></li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.4-1_all.deb?raw=true'>onerng_3.4-1_all.deb</a> (9.1K)</li>
+<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg openssl</pre></li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.5-1_all.deb?raw=true'>onerng_3.5-1_all.deb</a> (9.6K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 78f1c2f52ae573e3b398a695ece7ab9f41868252657ea269f0d5cf0bd4f2eb59
-   MD5: 5cd82ec08d4b05d3b817b4a3d6d527a0</pre></li>
-<li>Install:<pre>sudo dpkg -i onerng_3.4-1_all.deb
+<pre>SHA256: 9f4a596aed6a0ab5b79c74c26292c6b0898496bf21dc68f2f6e70fe162494cc1
+   MD5: aa5f4ae697b49b418c87ca29a978bd15</pre></li>
+<li>Install:<pre>sudo dpkg -i onerng_3.5-1_all.deb
 </pre></li>
 <li>Uninstall: <pre>sudo dpkg -r onerng</pre></li>
 </ul>
@@ -182,11 +182,11 @@ and will refuse to use the unit if the signature checks fail.
 <h4>RedHat package</h4>
 <ul>
 <li>Install prerequisites: <pre>sudo yum install rng-tools at python-gnupg</pre></li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.4-1.fc20.noarch.rpm?raw=true'>onerng-3.4-1.fc20.noarch.rpm</a> (9.4K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.5-1.fc20.noarch.rpm?raw=true'>onerng-3.5-1.fc20.noarch.rpm</a> (11K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 47d2911d2c5e23e64e6425a76915abcb56a12452000f2c4f4bcee5890c28ad6d
-   MD5: b912a93ee3c66cb0205ee45ff2dd9ef1</pre></li>
-<li>Install:<pre>sudo rpm -i onerng-3.4-1.fc20.noarch.rpm
+<pre>SHA256: edfdf2446b98e150a0414f226863d058a24111fae185fec258204a3eeed33da5
+   MD5: 36ef9e4a833836bc26ce3feef548dd47</pre></li>
+<li>Install:<pre>sudo rpm -i onerng-3.5-1.fc20.noarch.rpm
 </pre></li>
 <li>Uninstall: <pre>sudo rpm -e onerng</pre></li>
 </ul>
@@ -196,11 +196,11 @@ and will refuse to use the unit if the signature checks fail.
 <h4>Tarball</h4>
 <ul>
 <li>Install prerequisites</li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.4.orig.tar.gz?raw=true'>onerng_3.4.orig.tar.gz</a> (102K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.5.orig.tar.gz?raw=true'>onerng_3.5.orig.tar.gz</a> (90K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 4430137c4bbf4d1b140cb56e21b695e415218fb0723cc6ebae5ac4943e56b023
-   MD5: cbd942523ac5322043932abc9f3616af</pre></li>
-<li>Install:<pre>tar xzf onerng_3.4.orig.tar.gz
+<pre>SHA256: afd6d0b64ad8e5557d10b497a9afb4ddeaf5e8d967069921941927f49b93fb16
+   MD5: 9a9829375c70c10f1f9c66b8ff939f73</pre></li>
+<li>Install:<pre>tar xzf onerng_3.5.orig.tar.gz
 cd onerng_1
 sudo make install
 sudo udevadmin control --reload-rules
