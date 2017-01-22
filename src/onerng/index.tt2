@@ -102,7 +102,7 @@ We provide an architecture-independent set of scripts to connect your [% onerng 
 to the <code>rngd</code> daemon present on most Linux distributions.
 
 The pre-requisites for these scripts are small :
-<code>at</code>, <code>rng-tools</code> and <code>python-gnupg</code>
+<code>at</code>, <code>rng-tools</code>, <code>python-gnupg</code> and <code>openssl</code>
 
 These scripts check the firmware every time they start communicating with [% onerng %],
 and will refuse to use the unit if the signature checks fail.
@@ -111,7 +111,7 @@ and will refuse to use the unit if the signature checks fail.
 <div class="install">
 <h4>Debian package</h4>
 <ul>
-<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg</pre></li>
+<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg openssl</pre></li>
 [% INCLUDE sw/deb.tt2 %]
 </pre></li>
 <li>Uninstall: <pre>sudo dpkg -r onerng</pre></li>
