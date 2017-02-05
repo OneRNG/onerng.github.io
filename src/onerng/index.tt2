@@ -102,7 +102,8 @@ We provide an architecture-independent set of scripts to connect your [% onerng 
 to the <code>rngd</code> daemon present on most Linux distributions.
 
 The pre-requisites for these scripts are small :
-<code>at</code>, <code>rng-tools</code>, <code>python-gnupg</code> and <code>openssl</code>
+<code>at</code>, <code>rng-tools</code>, <code>python-gnupg</code> and <code>openssl</code>.
+Arch Linux users will need to install and enable <code>atd</code> to support the <code>at</code>
 
 These scripts check the firmware every time they start communicating with [% onerng %],
 and will refuse to use the unit if the signature checks fail.
