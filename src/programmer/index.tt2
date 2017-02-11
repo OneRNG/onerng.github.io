@@ -62,7 +62,7 @@ but for other combinations you will have to provide your own.</p>
 
 <a name="source"><h4>Downloading starting source</h4></a>
 
-<p>Our source is stored on GitHub at <a href="https://github.com/[% onerng %]/firmware">https://github.com/[% onerng %]/firmware</a> grab a copy and install the source tree on your system.</p>
+<p>Our source is stored on GitHub at <a href="https://github.com/onerng/firmware">https://github.com/[% onerng %]/firmware</a> grab a copy and install the source tree on your system.</p>
 
 <p>It's based on the CC cheaprf system - source is available here: <a href="https://github.com/MoonbaseOtago/CC-System">https://github.com/MoonbaseOtago/CC-System</a> the [% onerng %] code has the RF portions removed and a hook in the main idle loop for collecting entropy. A detailed document on programming in this environment is <a href="http://www.moonbaseotago.com/cheaprf/programming.html">available here</a>. In particular it covers tasks and timers which are used extensively in the [% onerng %] source code.</p>
 
