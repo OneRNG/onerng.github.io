@@ -1,5 +1,5 @@
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.5.orig.tar.gz?raw=true'>onerng_3.5.orig.tar.gz</a> (90K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.6.orig.tar.gz?raw=true'>onerng_3.6.orig.tar.gz</a> (106K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: afd6d0b64ad8e5557d10b497a9afb4ddeaf5e8d967069921941927f49b93fb16
-   MD5: 9a9829375c70c10f1f9c66b8ff939f73</pre></li>
-<li>Install:<pre>tar xzf onerng_3.5.orig.tar.gz
+<pre>SHA256: 66a6d4be9725642488c33effa04b389bf24e4dd66b45f7316f3403142c1d80a3
+   MD5: f1ffd033c56c9d66425304cef7d50f68</pre></li>
+<li>Install:<pre>tar xzf onerng_3.6.orig.tar.gz
