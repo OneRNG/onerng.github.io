@@ -1,15 +1,15 @@
 all:
 	mkdir -p ../img
-	rm -f ../img/*
+	rm -rf ../img/*
 	cp -vu img/*png ../img/
 	cp -vu img/*svg ../img/
 	mkdir -p ../pic
-	rm -f ../pic/*
+	rm -rf ../pic/*
 	./mkpictt
 	cp -vu pic/*png ../pic/
 	cp -vu pic/*jpg ../pic/
 	mkdir -p ../sw
-	rm -f ../sw/*
+	rm -rf ../sw/*
 	./mkswtt
 	cp -vu sw/*deb sw/*rpm sw/*gz sw/*brd sw/*sch ../sw/
 	mkdir -p ../fonts
