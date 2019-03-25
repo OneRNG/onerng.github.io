@@ -13,6 +13,7 @@
 <li><a href="http://lca2015.linux.org.au/">LCA2015</a>, 15 Jan 2015 (<a href="http://onerng.info/LCA2015">slides</a>) (45m video; 
 <a href="http://mirror.linux.org.au/linux.conf.au/2015/OGGB4/Thursday/OneRNG_An_Open_and_Verifiable_hardware_random_number_generator.webm">WebM </a> or
 <a href="https://www.youtube.com/watch?v=jiy1rlKdBo8">YouTube</a>)
+<il><li><a href="https://lwn.net/Articles/629714/">LWN Review</a> of the LCA2015 presentation</li></ul>
 </li>
 <li><a href="https://www.kickstarter.com/projects/moonbaseotago/onerng-an-open-source-entropy-generator">Kickstarter campaign</a>, 15 Dec 2014</li>
 <li><a href="https://www.kiwicon.org/the-con/talks/#e152">Kiwicon 8</a>, 11 Dec 2015 (<a href="http://onerng.info/Kiwicon8/">slides</a>)</li>
@@ -21,6 +22,7 @@
 
 <h3>External Reviews</h3>
 <ul>
+<li><a href="https://lwn.net/Articles/648550/>LWN.net</a>, 24 June 2015</li>
 <li><a href="https://www.reddit.com/r/netsec/comments/2q6xmh/introducing_the_onerng_usb_connected_entropy/">Reddit r/netsec</a>, 23 Dec 2014</li>
 <li><a href="https://financialcryptography.com/mt/archives/001534.html">Financial Cryptography</a>, 21 Dec 2014</li>
 <li><a href="http://www.theregister.co.uk/2014/11/17/meet_onerng_a_fullyopen_entropy_generator_for_a_paranoid_age/">The Register</a>, 17 Nov 2014</li>

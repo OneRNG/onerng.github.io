@@ -56,6 +56,32 @@ You can use our designs to build your own copy of the unit,
 or incorporate some of our solutions into your own designs.
 [% END %]
 
+<h3>Alternatives</h3>
+[% FILTER html_para %]
+The original inspiration for [% onerng %] was the Entropy Key, see
+<a href="http://www.entropykey.co.uk/">http://www.entropykey.co.uk/</a> for details.
+Sadly, we believe that there are no future plans to make any more of these devices.
+
+Another solution that was available early on is NeuG, see
+<a href="https://www.gniibe.org/memo/development/gnuk/rng/neug.html">https://www.gniibe.org/memo/development/gnuk/rng/neug.html</a>
+for details of this device, which is available from the Free Software Foundation shop.
+
+We learned a lot from the paper discussing <a href="http://www.av8n.com/turbid/">Turbid</a>,
+by John S. Denker, which uses your computer's existing audio I/O system as a source.
+
+We missed the LCA 2014 talk from Paul Warren discussing his approach to using SDR (software defined radio)
+as a source, <a href="https://github.com/pwarren/rtl-entropy">https://github.com/pwarren/rtl-entropy</a>,
+but caught up with him soon afterwards.
+
+Altus Metrum (Bdale Garbee &amp; Keith Packard) produced their own device,
+<a href="http://altusmetrum.org/ChaosKey">ChaosKey</a>, taking correct advantage of our
+Open Source designs to help them build theirs.
+
+And for light relief, see the GamesByEmail
+<a href="http://gamesbyemail.com/DiceGenerator"/>Dice-O-Matic</a> and
+<a href="http://gamesbyemail.com/News/DiceOMatic"/>Dice-O-Matic mark II</a>.
+
+[% END %]
 
 <h3>Technical Details</h3>
 <ul>

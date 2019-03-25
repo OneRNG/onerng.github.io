@@ -32,7 +32,7 @@ this essential feature of security for you, the user.
 
 <h3>TL;DR - Shut up and take my money!</h3>
 The V3 external and V2 internal [% onerng %] are currently for sale on the
-<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
+<a href="https://moonbase-otago.myshopify.com/">Moonbase Otago eshop</a>.
 Sadly the programmer is not currently in stock.
 
 <h3>Verify your security</h3>
@@ -168,7 +168,7 @@ that will over-write or otherwise invalidate the signature.
 <h3>Buy it now</h3>
 [% FILTER html_para %]
 The V3 external and V2 internal [% onerng %] are currently for sale on the
-<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a>.
+<a href="https://moonbase-otago.myshopify.com/">Moonbase Otago eshop</a>.
 Unfortunately, the programmer is not available at the moment.
 
 [% END %]
@@ -176,7 +176,7 @@ Unfortunately, the programmer is not available at the moment.
 <h3>More Information</h3>
 <ul>
   <li>Where can I get a [% onerng %] from? &mdash; The 
-<a href="http://moonbase.tictail.com/">Moonbase Otago eshop</a> is now taking orders</li>
+<a href="https://moonbase-otago.myshopify.com/">Moonbase Otago eshop</a> is now taking orders</li>
   <li><a href="whatisonerng.html">What is [% onerng %]?</a> &mdash; Technical details</li>
   <li>I have a [% onerng %] &mdash; How can I <a href="/onerng/">verify and use</a> my unit?</li>
   <li>I have a [% onerng %] programmer &mdash; How can I <a href="/programmer/">verify and use</a> my unit?</li>
