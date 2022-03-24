@@ -149,7 +149,7 @@ If [% onerng %] is working correctly, you should see the LED light dim as the on
 When you interrupt the <code>cat</code> command (by pressing control-C) the LED should return to normal brightness.
 
 <h3>Support for [% onerng %]</h3>
-Please join the <a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> for support queries,
+Please join the <a href="https://lists.ourshack.com/mailman/listinfo/discuss">[% onerng %] Discussion Group</a> for support queries,
 or contact members of <a href="/team.html">the [% onerng %] team</a> directly.
 [% END %]
 

@@ -180,7 +180,7 @@ Unfortunately, the programmer is not available at the moment.
   <li><a href="whatisonerng.html">What is [% onerng %]?</a> &mdash; Technical details</li>
   <li>I have a [% onerng %] &mdash; How can I <a href="/onerng/">verify and use</a> my unit?</li>
   <li>I have a [% onerng %] programmer &mdash; How can I <a href="/programmer/">verify and use</a> my unit?</li>
-  <li><a href="http://lists.onerng.info/groups/onerng-talk/">[% onerng %] Discussion Group</a> &mdash; Email/Forum</li>
+  <li><a href="https://lists.ourshack.com/mailman/listinfo/discuss">[% onerng %] Discussion Group</a> &mdash; email list</li>
   <li><a href="presentations.html">Presentations, Reviews &amp; Awards</a></li>
   <li><a href="history.html">The [% onerng %] story</a> &mdash; Who runs the [% onerng %] project?</li>
 </ul>
