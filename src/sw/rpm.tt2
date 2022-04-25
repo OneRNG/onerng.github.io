@@ -1,5 +1,5 @@
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.6-1.fc20.noarch.rpm?raw=true'>onerng-3.6-1.fc20.noarch.rpm</a> (11K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.7-1.fc33.noarch.rpm?raw=true'>onerng-3.7-1.fc33.noarch.rpm</a> (15K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 2ebebadea4f77a59ae2793ed457a19afdd5d68a92f13f748f8d2dceeb10d9c11
-   MD5: 6cfbbebe1998bc0e7733cc9f752a0548</pre></li>
-<li>Install:<pre>sudo rpm -i onerng-3.6-1.fc20.noarch.rpm
+<pre>SHA256: 00a793e7f73c060682fee6ae98fe13db629fce4eaa465637b7bfab35f136e770
+   MD5: f499b3bca5799dd385252507c382bc58</pre></li>
+<li>Install:<pre>sudo rpm -i onerng-3.7-1.fc33.noarch.rpm
