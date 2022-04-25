@@ -29,7 +29,7 @@ We are working to populate these pages as quickly as possible, so please bear wi
 <ul>
 <li>First, you need to identify which variation of the <span class='onerngbg'>OneRNG</span> hardware you have</li>
 <li>Visually inspect the unit (removing the 'tin-foil hat'/shield) and compare to these images<br/>
- Note that there should be a sticker over the programming port of the boards (we don't guarantee the color, size of shape of the sticker!)</li>
+ Note that there may be a sticker over the programming port of the boards (we don't guarantee the color, size of shape of the sticker!)</li>
 <li>Check the labelling on the single complex component, the CC2531 chip. The first two lines are important; the product name and data size. The other two lines are manufacturing batch numbers, and we are not tracking those for verification purposes</li>
 <li>Compare the unit to the published circuit diagrams</li>
 </ul>
@@ -155,7 +155,7 @@ to the <code>rngd</code> daemon present on most Linux distributions.
 
 <p>
 The pre-requisites for these scripts are small :
-<code>at</code>, <code>rng-tools</code>, <code>python-gnupg</code> and <code>openssl</code>.
+<code>at</code>, <code>rng-tools</code>, <code>python3-gnupg</code> and <code>openssl</code>.
 Arch Linux users will need to install and enable <code>atd</code> to support the <code>at</code>
 </p>
 
@@ -165,15 +165,19 @@ and will refuse to use the unit if the signature checks fail.
 </p>
 
 <p>
+Note: if rng-tools fails to install you can ignore that error
+</p>
+
+<p>
 <div class="install">
 <h4>Debian package</h4>
 <ul>
-<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python-gnupg openssl</pre></li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.6-1_all.deb?raw=true'>onerng_3.6-1_all.deb</a> (9.7K)</li>
+<li>Install prerequisites: <pre>sudo apt-get install rng-tools at python3-gnupg openssl</pre></li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.7-1_all.deb?raw=true'>onerng_3.7-1_all.deb</a> (11K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: a9ccf7b04ee317dbfc91518542301e2d60ebe205d38e80563f29aac7cd845ccb
-   MD5: 682e6cb648a58a0443b51ff773197a50</pre></li>
-<li>Install:<pre>sudo dpkg -i onerng_3.6-1_all.deb
+<pre>SHA256: b7cda2fe07dce219a95dfeabeb5ee0f662f64ba1474f6b9dddacc3e8734d8f57
+   MD5: f33216262757e317e4843e0c6896ce8a</pre></li>
+<li>Install:<pre>sudo dpkg -i onerng_3.7-1_all.deb
 </pre></li>
 <li>Uninstall: <pre>sudo dpkg -r onerng</pre></li>
 </ul>
@@ -182,12 +186,12 @@ and will refuse to use the unit if the signature checks fail.
 <p>
 <h4>RedHat package</h4>
 <ul>
-<li>Install prerequisites: <pre>sudo yum install rng-tools at python-gnupg</pre></li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.6-1.fc20.noarch.rpm?raw=true'>onerng-3.6-1.fc20.noarch.rpm</a> (11K)</li>
+<li>Install prerequisites: <pre>sudo yum install rng-tools at python3-gnupg</pre></li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng-3.7-1.fc33.noarch.rpm?raw=true'>onerng-3.7-1.fc33.noarch.rpm</a> (15K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 2ebebadea4f77a59ae2793ed457a19afdd5d68a92f13f748f8d2dceeb10d9c11
-   MD5: 6cfbbebe1998bc0e7733cc9f752a0548</pre></li>
-<li>Install:<pre>sudo rpm -i onerng-3.6-1.fc20.noarch.rpm
+<pre>SHA256: 00a793e7f73c060682fee6ae98fe13db629fce4eaa465637b7bfab35f136e770
+   MD5: f499b3bca5799dd385252507c382bc58</pre></li>
+<li>Install:<pre>sudo rpm -i onerng-3.7-1.fc33.noarch.rpm
 </pre></li>
 <li>Uninstall: <pre>sudo rpm -e onerng</pre></li>
 </ul>
@@ -197,11 +201,11 @@ and will refuse to use the unit if the signature checks fail.
 <h4>Tarball</h4>
 <ul>
 <li>Install prerequisites</li>
-<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.6.orig.tar.gz?raw=true'>onerng_3.6.orig.tar.gz</a> (106K)</li>
+<li>Download the package (via HTTPS from GitHub): <a href='https://github.com/OneRNG/onerng.github.io/blob/master/sw/onerng_3.7.orig.tar.gz?raw=true'>onerng_3.7.orig.tar.gz</a> (130K)</li>
 <li>Verify the package checksum<br/>
-<pre>SHA256: 66a6d4be9725642488c33effa04b389bf24e4dd66b45f7316f3403142c1d80a3
-   MD5: f1ffd033c56c9d66425304cef7d50f68</pre></li>
-<li>Install:<pre>tar xzf onerng_3.6.orig.tar.gz
+<pre>SHA256: cf53c56fca9eed7f3c93db4ad949ccebc629725b52fbedc4b10761d0c7fe9d3c
+   MD5: 7abe6589491788b881e82528f5c80a20</pre></li>
+<li>Install:<pre>tar xzf onerng_3.7.orig.tar.gz
 cd onerng_1
 sudo make install
 sudo udevadmin control --reload-rules
@@ -213,6 +217,29 @@ sudo udevadmin control --reload-rules
 
 <p>
 <h3>Test <span class='onerngbg'>OneRNG</span> Operation</h3>
+</p>
+
+<p>
+<h4>Release 3.7 and later instructions</h4>
+</p>
+
+<p>
+Release 3.7 is a maintenance release, if your OneRNG is working well for you there is no reason to upgrade the software. There are two main changes, both in response to changes in modern linux systems:
+<ul>
+<li>We now use python3 for verifying the cryptographic signature of the device's firmware</li>
+<li>The linux kernel has changed the way that it supports RNG devices - it no longer correctly supports the entropy driven API for providing data to the kernel entropy pool - we have changed the OneRNG daemon script to periodicaly feed the kernel with new entropy, you can  change this rate by editing the OneRNG config file /etc/onerng.conf, then removing the OneRNG and plugging it b ack in again</li>
+</ul>
+</p>
+
+<p>
+Starting with version 3.7 you can  verify that your OneRNG is working correctly by noting that the orange LED blinks every second or so.
+</p>
+
+<p>
+<h4>Release 3.6 and earlier instructions</h4>
+</p>
+
+<p>
 Once the Host Software has been installed, insert your <span class='onerngbg'>OneRNG</span>. Test the correct operation of the hardware
 and software combined by demanding large quantities of data from <code>/dev/random</code>.
 </p>
