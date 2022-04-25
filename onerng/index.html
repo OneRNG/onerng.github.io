@@ -227,7 +227,7 @@ sudo udevadmin control --reload-rules
 Release 3.7 is a maintenance release, if your OneRNG is working well for you there is no reason to upgrade the software. There are two main changes, both in response to changes in modern linux systems:
 <ul>
 <li>We now use python3 for verifying the cryptographic signature of the device's firmware</li>
-<li>The linux kernel has changed the way that it supports RNG devices - it no longer correctly supports the entropy driven API for providing data to the kernel entropy pool - we have changed the OneRNG daemon script to periodicaly feed the kernel with new entropy, you can  change this rate by editing the OneRNG config file /etc/onerng.conf, then removing the OneRNG and plugging it b ack in again</li>
+<li>The linux kernel has changed the way that it supports RNG devices - it no longer correctly supports the entropy driven API for providing data to the kernel entropy pool - we have changed the OneRNG daemon script to periodicaly feed the kernel with new entropy, you can  change this rate by editing the OneRNG config file /etc/onerng.conf, then removing the OneRNG and plugging it back in again</li>
 </ul>
 </p>
 
